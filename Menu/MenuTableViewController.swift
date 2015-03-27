@@ -69,7 +69,18 @@ class MenuTableViewController: UITableViewController {
     }
     
     @IBAction func showMenu(sender: UIBarButtonItem) {
-
+        let controller = storyboard!.instantiateViewControllerWithIdentifier("Sections") as MenuSectionsTableViewController
+        controller.menu = menu
+        controller.handler = {
+            indexPath in
+            var sectionIndex = 0
+            for i in 0..<indexPath.section {
+                sectionIndex += self.menu.subMenus[i].sections.count
+            }
+            sectionIndex += indexPath.row
+            self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: sectionIndex), atScrollPosition: UITableViewScrollPosition.Top, animated: false)
+        }
+        controller.presentSoftModalInViewController(view.window!.rootViewController)
     }
     
     @IBAction func showInfo(sender: UIButton) {

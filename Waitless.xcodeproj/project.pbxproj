@@ -10,6 +10,7 @@
 		14005F231ABE6C7400EF597D /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14005F221ABE6C7400EF597D /* MenuTableViewController.swift */; };
 		14005F271ABE7ABC00EF597D /* UIViewController+SoftModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 14005F261ABE7ABC00EF597D /* UIViewController+SoftModal.m */; };
 		14005F2A1ABE7B0200EF597D /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 14005F291ABE7B0200EF597D /* UIImage+ImageEffects.m */; };
+		14266E421AC503EE0086F9A8 /* MenuSectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14266E411AC503EE0086F9A8 /* MenuSectionsTableViewController.swift */; };
 		1488F5201ABE63FF00E1A1E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488F51F1ABE63FF00E1A1E1 /* AppDelegate.swift */; };
 		1488F5251ABE63FF00E1A1E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1488F5231ABE63FF00E1A1E1 /* Main.storyboard */; };
 		1488F5271ABE63FF00E1A1E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1488F5261ABE63FF00E1A1E1 /* Images.xcassets */; };
@@ -33,6 +34,7 @@
 		14005F261ABE7ABC00EF597D /* UIViewController+SoftModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SoftModal.m"; sourceTree = "<group>"; };
 		14005F281ABE7B0200EF597D /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		14005F291ABE7B0200EF597D /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		14266E411AC503EE0086F9A8 /* MenuSectionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSectionsTableViewController.swift; sourceTree = "<group>"; };
 		1488F51A1ABE63FF00E1A1E1 /* Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1488F51E1ABE63FF00E1A1E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1488F51F1ABE63FF00E1A1E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		1488F51C1ABE63FF00E1A1E1 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				14266E411AC503EE0086F9A8 /* MenuSectionsTableViewController.swift */,
 				14A2B7441AC3C18D000A06EA /* MenuTableShortCell.swift */,
 				14A2B7461AC3C26B000A06EA /* MenuTableLongCell.swift */,
 				14A2B73C1AC38A4B000A06EA /* menu.json */,
@@ -247,6 +250,7 @@
 				14005F231ABE6C7400EF597D /* MenuTableViewController.swift in Sources */,
 				1488F5201ABE63FF00E1A1E1 /* AppDelegate.swift in Sources */,
 				14A2B73F1AC38AE2000A06EA /* SwiftyJSON.swift in Sources */,
+				14266E421AC503EE0086F9A8 /* MenuSectionsTableViewController.swift in Sources */,
 				14A2B7411AC38D8F000A06EA /* menu.swift in Sources */,
 				14005F271ABE7ABC00EF597D /* UIViewController+SoftModal.m in Sources */,
 				14A2B7471AC3C26B000A06EA /* MenuTableLongCell.swift in Sources */,
