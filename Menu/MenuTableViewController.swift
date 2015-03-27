@@ -14,9 +14,10 @@ extension MenuItem: Hashable {
     }
 }
 
-class MenuTableViewController: UITableViewController {
+class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
     @IBOutlet weak var templateLabel: UILabel!
     @IBOutlet weak var orderCountBarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var finishBarButtonItem: UIBarButtonItem!
     
     lazy var longCellPrototype: MenuTableLongCell! = {
         return self.tableView.dequeueReusableCellWithIdentifier("long") as MenuTableLongCell
@@ -66,6 +67,11 @@ class MenuTableViewController: UITableViewController {
         var total = 0
         total = order.values.array.reduce(total) { $1 + $0 }
         orderCountBarButtonItem.title = "\(total) items in order".uppercaseString
+        if total == 0 {
+            finishBarButtonItem.enabled = false
+        } else {
+            finishBarButtonItem.enabled = true
+        }
     }
     
     @IBAction func showMenu(sender: UIBarButtonItem) {
@@ -88,7 +94,26 @@ class MenuTableViewController: UITableViewController {
     }
     
     @IBAction func finish(sender: UIBarButtonItem) {
-
+        let controller = storyboard!.instantiateViewControllerWithIdentifier("Order") as OrderViewController
+        controller.order = order.keys.array
+        controller.presentSoftModalInViewController(view.window!.rootViewController)
+    }
+    
+    @IBAction func clear(sender: UIBarButtonItem) {
+        UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: "Clear Order").showFromBarButtonItem(sender, animated: true)
+    }
+    
+    func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {
+        if buttonIndex == 0 {
+            clearOrder()
+        }
+    }
+    
+    func clearOrder() {
+        for k in order.keys {
+            k.count = 0
+            order[k] = nil
+        }
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

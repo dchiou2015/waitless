@@ -13,12 +13,30 @@ let MenuItemChangedNotification = "MenuItemChangedNotification"
 class Menu {
     
     let subMenus = [SubMenu]()
+    
+    private var idMap = [Int: MenuItem]()
+    
     init(json: JSON) {
         for (_, obj) in json {
             let subMenu = SubMenu(json: obj)
             subMenu.parent = self
             subMenus.append(subMenu)
         }
+        
+        var id = 0
+        for subMenu in subMenus {
+            for section in subMenu.sections {
+                for item in section.items {
+                    item.id = id
+                    idMap[id] = item
+                    id++
+                }
+            }
+        }
+    }
+    
+    func itemById(id: Int) -> MenuItem? {
+        return idMap[id]
     }
     
     var sectionCount: Int {
@@ -103,7 +121,8 @@ class MenuItem {
         description = json["description"].string
     }
     weak var parent: MenuSection!
-    var index = -1
+    var id: Int!
+    var index: Int!
     let name: String
     let price: Double
     let description: String?
