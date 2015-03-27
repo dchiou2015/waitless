@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		14005F231ABE6C7400EF597D /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14005F221ABE6C7400EF597D /* MenuTableViewController.swift */; };
+		14005F271ABE7ABC00EF597D /* UIViewController+SoftModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 14005F261ABE7ABC00EF597D /* UIViewController+SoftModal.m */; };
+		14005F2A1ABE7B0200EF597D /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 14005F291ABE7B0200EF597D /* UIImage+ImageEffects.m */; };
 		1488F5201ABE63FF00E1A1E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488F51F1ABE63FF00E1A1E1 /* AppDelegate.swift */; };
 		1488F5251ABE63FF00E1A1E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1488F5231ABE63FF00E1A1E1 /* Main.storyboard */; };
 		1488F5271ABE63FF00E1A1E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1488F5261ABE63FF00E1A1E1 /* Images.xcassets */; };
@@ -17,10 +19,20 @@
 		1488F54B1ABE641C00E1A1E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1488F5491ABE641C00E1A1E1 /* Main.storyboard */; };
 		1488F54D1ABE641C00E1A1E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1488F54C1ABE641C00E1A1E1 /* Images.xcassets */; };
 		1488F5501ABE641C00E1A1E1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1488F54E1ABE641C00E1A1E1 /* LaunchScreen.xib */; };
+		14A2B73D1AC38A4B000A06EA /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 14A2B73C1AC38A4B000A06EA /* menu.json */; };
+		14A2B73F1AC38AE2000A06EA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A2B73E1AC38AE2000A06EA /* SwiftyJSON.swift */; };
+		14A2B7411AC38D8F000A06EA /* menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A2B7401AC38D8F000A06EA /* menu.swift */; };
+		14A2B7451AC3C18D000A06EA /* MenuTableShortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A2B7441AC3C18D000A06EA /* MenuTableShortCell.swift */; };
+		14A2B7471AC3C26B000A06EA /* MenuTableLongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A2B7461AC3C26B000A06EA /* MenuTableLongCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14005F221ABE6C7400EF597D /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		14005F241ABE7ABB00EF597D /* Menu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Menu-Bridging-Header.h"; sourceTree = "<group>"; };
+		14005F251ABE7ABC00EF597D /* UIViewController+SoftModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SoftModal.h"; sourceTree = "<group>"; };
+		14005F261ABE7ABC00EF597D /* UIViewController+SoftModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SoftModal.m"; sourceTree = "<group>"; };
+		14005F281ABE7B0200EF597D /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		14005F291ABE7B0200EF597D /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		1488F51A1ABE63FF00E1A1E1 /* Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1488F51E1ABE63FF00E1A1E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1488F51F1ABE63FF00E1A1E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +46,11 @@
 		1488F54A1ABE641C00E1A1E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1488F54C1ABE641C00E1A1E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1488F54F1ABE641C00E1A1E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		14A2B73C1AC38A4B000A06EA /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		14A2B73E1AC38AE2000A06EA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		14A2B7401AC38D8F000A06EA /* menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menu.swift; sourceTree = "<group>"; };
+		14A2B7441AC3C18D000A06EA /* MenuTableShortCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableShortCell.swift; sourceTree = "<group>"; };
+		14A2B7461AC3C26B000A06EA /* MenuTableLongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableLongCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,12 +92,22 @@
 		1488F51C1ABE63FF00E1A1E1 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				14A2B7441AC3C18D000A06EA /* MenuTableShortCell.swift */,
+				14A2B7461AC3C26B000A06EA /* MenuTableLongCell.swift */,
+				14A2B73C1AC38A4B000A06EA /* menu.json */,
+				14005F251ABE7ABC00EF597D /* UIViewController+SoftModal.h */,
+				14005F261ABE7ABC00EF597D /* UIViewController+SoftModal.m */,
+				14005F281ABE7B0200EF597D /* UIImage+ImageEffects.h */,
+				14005F291ABE7B0200EF597D /* UIImage+ImageEffects.m */,
 				1488F51F1ABE63FF00E1A1E1 /* AppDelegate.swift */,
 				1488F5231ABE63FF00E1A1E1 /* Main.storyboard */,
 				14005F221ABE6C7400EF597D /* MenuTableViewController.swift */,
+				14A2B73E1AC38AE2000A06EA /* SwiftyJSON.swift */,
+				14A2B7401AC38D8F000A06EA /* menu.swift */,
 				1488F5261ABE63FF00E1A1E1 /* Images.xcassets */,
 				1488F5281ABE63FF00E1A1E1 /* LaunchScreen.xib */,
 				1488F51D1ABE63FF00E1A1E1 /* Supporting Files */,
+				14005F241ABE7ABB00EF597D /* Menu-Bridging-Header.h */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -193,6 +220,7 @@
 			files = (
 				1488F5251ABE63FF00E1A1E1 /* Main.storyboard in Resources */,
 				1488F52A1ABE63FF00E1A1E1 /* LaunchScreen.xib in Resources */,
+				14A2B73D1AC38A4B000A06EA /* menu.json in Resources */,
 				1488F5271ABE63FF00E1A1E1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,8 +242,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A2B7451AC3C18D000A06EA /* MenuTableShortCell.swift in Sources */,
+				14005F2A1ABE7B0200EF597D /* UIImage+ImageEffects.m in Sources */,
 				14005F231ABE6C7400EF597D /* MenuTableViewController.swift in Sources */,
 				1488F5201ABE63FF00E1A1E1 /* AppDelegate.swift in Sources */,
+				14A2B73F1AC38AE2000A06EA /* SwiftyJSON.swift in Sources */,
+				14A2B7411AC38D8F000A06EA /* menu.swift in Sources */,
+				14005F271ABE7ABC00EF597D /* UIViewController+SoftModal.m in Sources */,
+				14A2B7471AC3C26B000A06EA /* MenuTableLongCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,12 +303,14 @@
 		1488F5141ABE63E700E1A1E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 			};
 			name = Debug;
 		};
 		1488F5151ABE63E700E1A1E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 			};
 			name = Release;
 		};
@@ -320,6 +356,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Menu/Menu-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -359,6 +396,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Menu/Menu-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

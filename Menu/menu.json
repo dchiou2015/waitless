@@ -1,0 +1,1819 @@
+[
+  {
+    "menuName": "All Day",
+    "description": "",
+    "sections": [
+      {
+        "sectionName": "Appetizers",
+        "items": [
+          {
+            "name": "Steamed Mushroom",
+            "price": "$4.50",
+            "description": "Fresh mushrooms stuffed with shrimp and vegetables."
+          },
+          {
+            "name": "Nasuno Dengaku",
+            "price": "$3.50",
+            "description": "Lightly fried eggplant topped with miso sauce."
+          },
+          {
+            "name": "Agedashi Tofu",
+            "price": "$4.25",
+            "description": "Lightly fried soybean cake served with special sauce."
+          },
+          {
+            "name": "Hiya Yako",
+            "price": "$3.00",
+            "description": "Chilled soybean cake."
+          },
+          {
+            "name": "Yu Tofu",
+            "price": "$5.25",
+            "description": "Soybean cake boiled in seaweed soup."
+          },
+          {
+            "name": "Horenso Oshitashi",
+            "price": "$3.50",
+            "description": "Steamed spinach over tender cabbage."
+          },
+          {
+            "name": "Ahiru",
+            "price": "$4.50",
+            "description": "Silver of roast duckling served with sweet sauce."
+          },
+          {
+            "name": "Harumaki",
+            "price": "$4.25",
+            "description": "Lightly fried pork egg rolls topped with miso soup."
+          },
+          {
+            "name": "Vegetable Harumaki",
+            "price": "$4.50",
+            "description": ""
+          },
+          {
+            "name": "Gyoza",
+            "price": "$5.25",
+            "description": "Fried Japanese pork ravioli."
+          },
+          {
+            "name": "Shumai",
+            "price": "$4.00",
+            "description": "Steamed pork dumpling with miso sauce."
+          },
+          {
+            "name": "Shrimp Shumai",
+            "price": "$5.25",
+            "description": "Steamed shrimp dumpling with miso sauce."
+          },
+          {
+            "name": "Yakitori",
+            "price": "$4.75",
+            "description": "Barbecued beef chunks. 3 Skewers"
+          },
+          {
+            "name": "Chicken Katsu",
+            "price": "$5.25",
+            "description": "Lightly fried batter chicken. 3 Skewers"
+          },
+          {
+            "name": "Beef Kushiyaki",
+            "price": "$5.25",
+            "description": "Barbecued beef chunks. 3 Skewers"
+          },
+          {
+            "name": "Beef Negimaki",
+            "price": "$6.25",
+            "description": "Barbecued beef roll with scallions."
+          },
+          {
+            "name": "Scallops",
+            "price": "$5.25",
+            "description": "Steamed in miso soup."
+          },
+          {
+            "name": "White Fish Tempura",
+            "price": "$5.25",
+            "description": ""
+          },
+          {
+            "name": "Vegetable Tempura",
+            "price": "$5.75",
+            "description": ""
+          },
+          {
+            "name": "Shrimp & Vegetable Tempura",
+            "price": "$6.25",
+            "description": ""
+          },
+          {
+            "name": "Soft Shell Crab Tempura",
+            "price": "$6.75",
+            "description": ""
+          },
+          {
+            "name": "Oyster Tempura",
+            "price": "$6.95",
+            "description": ""
+          },
+          {
+            "name": "Yellow Tail Kama",
+            "price": "$10.95",
+            "description": "Grilled Yellow tail"
+          }
+        ],
+        "description": ""
+      },
+      {
+        "sectionName": "Soups",
+        "items": [
+          {
+            "name": "Miso Shiro Soup",
+            "price": "$2.00",
+            "description": "Soybean broth with tofu and scallions."
+          },
+          {
+            "name": "Oshumashi Soup",
+            "price": "$2.00",
+            "description": "Clear broth with tofu, black mushrooms, sliced fish cake and scallions."
+          },
+          {
+            "name": "Shrimp Shumai Soup",
+            "price": "$4.75",
+            "description": ""
+          },
+          {
+            "name": "Seafood Soup",
+            "price": "$6.75",
+            "description": "Shrimp, fishcake, scallop and crab."
+          }
+        ],
+        "description": ""
+      },
+      {
+        "sectionName": "Salads",
+        "items": [
+          {
+            "name": "House Salad",
+            "price": "$3.00",
+            "description": "Fresh greens with house dressing."
+          },
+          {
+            "name": "Chef's Salad",
+            "price": "$4.00",
+            "description": "Japanese style salad with crabmeat and house dressing."
+          },
+          {
+            "name": "Spicy Lobster Salad",
+            "price": "$10.00",
+            "description": ""
+          },
+          {
+            "name": "Sashimi Salad",
+            "price": "$8.25",
+            "description": ""
+          },
+          {
+            "name": "Tako Salad",
+            "price": "$8.25",
+            "description": "Octopus"
+          },
+          {
+            "name": "Kani Salad",
+            "price": "$6.50",
+            "description": ""
+          },
+          {
+            "name": "Avocado Salad",
+            "price": "$4.50",
+            "description": ""
+          },
+          {
+            "name": "Seaweed Salad",
+            "price": "$4.50",
+            "description": "Wakame."
+          },
+          {
+            "name": "Edamame Salad",
+            "price": "$3.50",
+            "description": "Steamed soybeans."
+          }
+        ],
+        "description": ""
+      },
+      {
+        "sectionName": "Chicken",
+        "items": [
+          {
+            "name": "Tori Teriyaki",
+            "price": "$12.50",
+            "description": "Chicken breast sauteed in teriyaki sauce."
+          },
+          {
+            "name": "Tori No Tatsuta Ageh",
+            "price": "$12.50",
+            "description": "Lightly fried chicken chunks topped with sweet ginger sauce."
+          },
+          {
+            "name": "Wakadori",
+            "price": "$13.50",
+            "description": "Lightly battered chicken breast served with tonkatsu sauce."
+          },
+          {
+            "name": "Chicken Maki",
+            "price": "$14.50",
+            "description": "Lightly battered chicken breast rolled with seaweed, scallion, carrots and mayonnaise."
+          },
+          {
+            "name": "Chicken & Beef Teriyaki",
+            "price": "$13.50",
+            "description": ""
+          }
+        ],
+        "description": "Served with Soup or Salad & White Rice"
+      },
+      {
+        "sectionName": "Pork",
+        "items": [
+          {
+            "name": "Buta No Shogayaki",
+            "price": "$12.50",
+            "description": "Pork tenderloin sauteed in sweet ginger sauce."
+          },
+          {
+            "name": "Ton Katsu",
+            "price": "$13.50",
+            "description": "Lightly battered pork cutlet served with tonkatsu sauce."
+          },
+          {
+            "name": "Katsu Don",
+            "price": "$14.50",
+            "description": "Fried battered pork cutlet served with tonkatsu sauce"
+          }
+        ],
+        "description": "Served with Soup or Salad & White Rice"
+      },
+      {
+        "sectionName": "Beef",
+        "items": [
+          {
+            "name": "Kobe Sanshoyaki",
+            "price": "$13.50",
+            "description": "Tender beef cubes sauteed with Japanese black pepper."
+          },
+          {
+            "name": "Yoshi No Yaki",
+            "price": "$13.50",
+            "description": "Filet of beef sauteed in teriyaki sauce."
+          },
+          {
+            "name": "Sukiyaki",
+            "price": "$13.50",
+            "description": "Thinly shaved beef stewed in lightly sweetened soy sauce with tofu and vegetables."
+          },
+          {
+            "name": "Negimaki",
+            "price": "$13.50",
+            "description": "Barbecued beef rolled with scallions."
+          }
+        ],
+        "description": "Served with Soup or Salad & White Rice"
+      },
+      {
+        "sectionName": "Seafood",
+        "items": [
+          {
+            "name": "Unajiu",
+            "price": "$14.50",
+            "description": "Broiled eel over a bed of rice."
+          },
+          {
+            "name": "Sakana Teriyaki",
+            "price": "$13.50",
+            "description": "White fish."
+          },
+          {
+            "name": "Saki Yaki",
+            "price": "$13.50",
+            "description": "Seasoned broiled salmon."
+          },
+          {
+            "name": "Sake Teriyaki",
+            "price": "$13.50",
+            "description": "Salmon sauteed in teriyaki sauce."
+          },
+          {
+            "name": "Tuna Teriyaki",
+            "price": "$13.50",
+            "description": ""
+          },
+          {
+            "name": "Shrimp Teriyaki",
+            "price": "$13.50",
+            "description": ""
+          },
+          {
+            "name": "Scallop Teriyaki",
+            "price": "$13.50",
+            "description": ""
+          },
+          {
+            "name": "Seafood Teriyaki",
+            "price": "$15.00",
+            "description": "Salmon, Scallop, Shrimp & White Fish"
+          },
+          {
+            "name": "Squid Teriyaki",
+            "price": "$13.50",
+            "description": ""
+          }
+        ],
+        "description": "Served with Soup or Salad & White Rice"
+      },
+      {
+        "sectionName": "Tempura",
+        "items": [
+          {
+            "name": "Yasai No Tempura",
+            "price": "$11.50",
+            "description": "Feather light fried mixed vegetables."
+          },
+          {
+            "name": "Chicken Tempura",
+            "price": "$12.50",
+            "description": "Feather light fried chicken breast and vegetables."
+          },
+          {
+            "name": "Ebi No Tempura",
+            "price": "$13.50",
+            "description": "Feather light fried shrimp, fish and vegetables."
+          },
+          {
+            "name": "Seafood Tempura",
+            "price": "$14.50",
+            "description": "Feather light fried shrimp, fish, scallops and vegetables."
+          }
+        ],
+        "description": "Served with Soup or Salad & White Rice. Japanese style Deep Frying with Tempura Batter"
+      },
+      {
+        "sectionName": "House Special",
+        "items": [
+          {
+            "name": "Udon Suki House Special",
+            "price": "$17.00",
+            "description": "Noodle soup with a variety of seafood and vegetables."
+          },
+          {
+            "name": "Nabeyaki House Special",
+            "price": "$12.50",
+            "description": "Noodle soup with shrimp tempura and fish cake."
+          },
+          {
+            "name": "Yosenabe House Special",
+            "price": "$15.50",
+            "description": "Crystal noodle soup with a variety of seafood and vegetables."
+          }
+        ],
+        "description": "Served with Soup or Salad"
+      },
+      {
+        "sectionName": "Vegetables",
+        "items": [
+          {
+            "name": "Vegetable Kari Rice",
+            "price": "$11.00",
+            "description": "Japanese style curry rice"
+          },
+          {
+            "name": "Chicken Kari Rice",
+            "price": "$13.00",
+            "description": "Japanese style curry rice"
+          },
+          {
+            "name": "Beef Kari Rice",
+            "price": "$13.00",
+            "description": "Japanese style curry rice"
+          },
+          {
+            "name": "Vegetables Yaki Soba",
+            "price": "$10.00",
+            "description": "Flat noodle sauteed with Vegetables."
+          },
+          {
+            "name": "Chicken Yaki Soba",
+            "price": "$12.00",
+            "description": "Flat noodle sauteed with Chicken."
+          },
+          {
+            "name": "Shrimp Yaki Soba",
+            "price": "$12.00",
+            "description": "Flat noodle sauteed with Shrimp."
+          },
+          {
+            "name": "Vegetables Yaki Udon",
+            "price": "$10.00",
+            "description": "Thick noodles sauteed with Vegetables."
+          },
+          {
+            "name": "Chicken Yaki Udon",
+            "price": "$12.00",
+            "description": "Thick noodles sauteed with Chicken."
+          },
+          {
+            "name": "Shrimp Yaki Udon",
+            "price": "$10.00",
+            "description": "Thick noodles sauteed with Shrimp."
+          }
+        ],
+        "description": "Served with Soup or Salad"
+      },
+      {
+        "sectionName": "Raw Bar",
+        "items": [
+          {
+            "name": "Blue Point Oysters w.Ponzu Sauce",
+            "price": "$9.95",
+            "description": ""
+          },
+          {
+            "name": "Live Scallops",
+            "price": "$11.00",
+            "description": ""
+          },
+          {
+            "name": "Live Surf Clam",
+            "price": "$11.00",
+            "description": ""
+          }
+        ],
+        "description": ""
+      },
+      {
+        "sectionName": "Nigiri",
+        "items": [
+          {
+            "name": "Avocado Nigiri",
+            "price": "$3.50",
+            "description": ""
+          },
+          {
+            "name": "Ika Nigiri",
+            "price": "$4.50",
+            "description": "Squid"
+          },
+          {
+            "name": "Kanikama Nigiri",
+            "price": "$3.25",
+            "description": "Crab"
+          },
+          {
+            "name": "Masago Nigiri",
+            "price": "$3.25",
+            "description": "Smelt Roe"
+          },
+          {
+            "name": "Saba Nigiri",
+            "price": "$3.50",
+            "description": "Mackerel"
+          },
+          {
+            "name": "Tamago Nigiri",
+            "price": "$3.50",
+            "description": "Rolled Egg"
+          },
+          {
+            "name": "Amaebi Nigiri",
+            "price": "$4.00",
+            "description": "Sweet Shrimp."
+          },
+          {
+            "name": "Ebi Nigiri",
+            "price": "$3.75",
+            "description": "Cooked Shrimp"
+          },
+          {
+            "name": "Baby Octopus Nigiri",
+            "price": "$3.75",
+            "description": ""
+          },
+          {
+            "name": "Tako Nigiri",
+            "price": "$4.00",
+            "description": "Octopus"
+          },
+          {
+            "name": "Maguro Nigiri",
+            "price": "$4.75",
+            "description": "Tuna"
+          },
+          {
+            "name": "Sake Nigiri",
+            "price": "$4.50",
+            "description": "Salmon"
+          },
+          {
+            "name": "Smoked Sake Nigiri",
+            "price": "$4.50",
+            "description": "Smoked Salmon"
+          },
+          {
+            "name": "Bonito Nigiri",
+            "price": "$4.75",
+            "description": "Tuna Talaki"
+          },
+          {
+            "name": "Albacore Nigiri",
+            "price": "$4.75",
+            "description": "White Tuna"
+          },
+          {
+            "name": "Suzuki Nigiri",
+            "price": "$3.75",
+            "description": "Striped Bass"
+          },
+          {
+            "name": "Fluke Nigiri",
+            "price": "$3.75",
+            "description": ""
+          },
+          {
+            "name": "Tai Nigiri",
+            "price": "$4.00",
+            "description": "Red Snapper"
+          },
+          {
+            "name": "Ikura Nigiri",
+            "price": "$4.25",
+            "description": "Salmon Roe"
+          },
+          {
+            "name": "Tobiko Nigiri",
+            "price": "$4.25",
+            "description": "Flying Fish Roe"
+          },
+          {
+            "name": "Wasabi Tobiko Nigiri",
+            "price": "$4.75",
+            "description": ""
+          },
+          {
+            "name": "Unagi Nigiri",
+            "price": "$4.25",
+            "description": "Fresh Water Eel"
+          },
+          {
+            "name": "Hokkigai Nigiri",
+            "price": "$4.25",
+            "description": "Surf Clam"
+          },
+          {
+            "name": "Inari Nigiri",
+            "price": "$3.50",
+            "description": "Sweet Tofu Skin"
+          },
+          {
+            "name": "Scallop Nigiri",
+            "price": "$5.00",
+            "description": ""
+          },
+          {
+            "name": "Uni Nigiri",
+            "price": "$5.50",
+            "description": "Sea Urchin."
+          },
+          {
+            "name": "Spicy Salmon Nigiri",
+            "price": "$4.75",
+            "description": ""
+          },
+          {
+            "name": "Spicy Tuna Nigiri",
+            "price": "$4.75",
+            "description": ""
+          },
+          {
+            "name": "Tuna Toro Nigiri",
+            "price": "$9.95",
+            "description": ""
+          }
+        ],
+        "description": ""
+      },
+      {
+        "sectionName": "Sashimi",
+        "items": [
+          {
+            "name": "Avocado Sashimi",
+            "price": "$3.75",
+            "description": ""
+          },
+          {
+            "name": "Ika Sashimi",
+            "price": "$4.75",
+            "description": "Squid"
+          },
+          {
+            "name": "Kanikama Sashimi",
+            "price": "$3.50",
+            "description": "Crab"
+          },
+          {
+            "name": "Masago Sashimi",
+            "price": "$3.50",
+            "description": "Smelt Roe"
+          },
+          {
+            "name": "Saba Sashimi",
+            "price": "$3.75",
+            "description": "Mackerel"
+          },
+          {
+            "name": "Tamago Sashimi",
+            "price": "$3.75",
+            "description": "Rolled Egg"
+          },
+          {
+            "name": "Amaebi Sashimi",
+            "price": "$4.25",
+            "description": "Sweet Shrimp."
+          },
+          {
+            "name": "Ebi Sashimi",
+            "price": "$4.00",
+            "description": "Cooked Shrimp"
+          },
+          {
+            "name": "Baby Octopus Sashimi",
+            "price": "$4.00",
+            "description": ""
+          },
+          {
+            "name": "Tako Sashimi",
+            "price": "$4.25",
+            "description": "Octopus"
+          },
+          {
+            "name": "Maguro Sashimi",
+            "price": "$5.00",
+            "description": "Tuna"
+          },
+          {
+            "name": "Sake Sashimi",
+            "price": "$4.75",
+            "description": "Salmon"
+          },
+          {
+            "name": "Smoked Sake Sashimi",
+            "price": "$4.75",
+            "description": "Smoked Salmon"
+          },
+          {
+            "name": "Bonito Sashimi",
+            "price": "$5.00",
+            "description": "Tuna Talaki"
+          },
+          {
+            "name": "Albacore Sashimi",
+            "price": "$5.00",
+            "description": "White Tuna"
+          },
+          {
+            "name": "Suzuki Sashimi",
+            "price": "$4.00",
+            "description": "Striped Bass"
+          },
+          {
+            "name": "Fluke Sashimi",
+            "price": "$4.00",
+            "description": ""
+          },
+          {
+            "name": "Tai Sashimi",
+            "price": "$4.25",
+            "description": "Red Snapper"
+          },
+          {
+            "name": "Ikura Sashimi",
+            "price": "$4.50",
+            "description": "Salmon Roe"
+          },
+          {
+            "name": "Tobiko Sashimi",
+            "price": "$4.50",
+            "description": "Flying Fish Roe"
+          },
+          {
+            "name": "Wasabi Tobiko Sashimi",
+            "price": "$5.00",
+            "description": ""
+          },
+          {
+            "name": "Unagi Sashimi",
+            "price": "$4.50",
+            "description": "Fresh Water Eel"
+          },
+          {
+            "name": "Hokkigai Sashimi",
+            "price": "$4.50",
+            "description": "Surf Clam"
+          },
+          {
+            "name": "Inari Sashimi",
+            "price": "$3.75",
+            "description": "Sweet Tofu Skin"
+          },
+          {
+            "name": "Scallop Sashimi",
+            "price": "$5.25",
+            "description": ""
+          },
+          {
+            "name": "Uni Sashimi",
+            "price": "$5.75",
+            "description": "Sea Urchin."
+          },
+          {
+            "name": "Spicy Salmon Sashimi",
+            "price": "$5.00",
+            "description": ""
+          },
+          {
+            "name": "Spicy Tuna Sashimi",
+            "price": "$5.00",
+            "description": ""
+          },
+          {
+            "name": "Tuna Toro Sashimi",
+            "price": "$10.20",
+            "description": ""
+          }
+        ],
+        "description": ""
+      },
+      {
+        "sectionName": "Maki",
+        "items": [
+          {
+            "name": "California Maki",
+            "price": "$4.50",
+            "description": "Crab, Avocado, Smelt Roe"
+          },
+          {
+            "name": "Salmon & Avocado Maki",
+            "price": "$4.50",
+            "description": ""
+          },
+          {
+            "name": "Kani Maki",
+            "price": "$3.50",
+            "description": "Crab"
+          },
+          {
+            "name": "Tako Maki",
+            "price": "$4.25",
+            "description": "Octopus"
+          },
+          {
+            "name": "Ika Maki",
+            "price": "$4.75",
+            "description": "Squid, Cuke, Avocado"
+          },
+          {
+            "name": "Salmon Skin Maki",
+            "price": "$3.75",
+            "description": ""
+          },
+          {
+            "name": "Tekka Maki",
+            "price": "$4.50",
+            "description": "Tuna w.Avocado"
+          },
+          {
+            "name": "Tekkyu Maki",
+            "price": "$4.50",
+            "description": "Tuna w.Cucumber"
+          },
+          {
+            "name": "Sake Maki",
+            "price": "$4.00",
+            "description": "Salmon"
+          },
+          {
+            "name": "Smoked Sake Maki",
+            "price": "$4.00",
+            "description": "Smoked Salmon"
+          },
+          {
+            "name": "Spicy Salmon Maki",
+            "price": "$4.75",
+            "description": ""
+          },
+          {
+            "name": "Spicy Tekka Maki",
+            "price": "$4.75",
+            "description": "Spicy Tuna"
+          },
+          {
+            "name": "Unagi Maki",
+            "price": "$5.00",
+            "description": "Freshwater Eel w.Avocado"
+          },
+          {
+            "name": "Unakyu Maki",
+            "price": "$4.75",
+            "description": "Eel w.Cucumber"
+          },
+          {
+            "name": "Nippon Maki",
+            "price": "$4.75",
+            "description": "Smelt Roe, Squash, Egg & Avocado"
+          },
+          {
+            "name": "Lobster Maki (Cooked)",
+            "price": "$5.25",
+            "description": ""
+          },
+          {
+            "name": "Spicy Unagi Maki",
+            "price": "$5.25",
+            "description": ""
+          },
+          {
+            "name": "Spicy Lobster Maki (Cooked)",
+            "price": "$5.75",
+            "description": ""
+          },
+          {
+            "name": "Saba Maki",
+            "price": "$3.75",
+            "description": "Mackerel"
+          },
+          {
+            "name": "Boston Maki",
+            "price": "$4.75",
+            "description": "Shrimp, Cuke, Avocado & Lettuce"
+          },
+          {
+            "name": "Uni Maki",
+            "price": "$6.75",
+            "description": ""
+          },
+          {
+            "name": "Spicy Scallop Maki",
+            "price": "$5.75",
+            "description": ""
+          },
+          {
+            "name": "Philadelphia Maki",
+            "price": "$4.75",
+            "description": "Cream Cheese, Smoked Salmon, Scallions Inside Out"
+          },
+          {
+            "name": "Ahiru Maki",
+            "price": "$4.50",
+            "description": "Cooked Duck, Cuke, Scallion"
+          },
+          {
+            "name": "Avocado Maki",
+            "price": "$3.50",
+            "description": ""
+          },
+          {
+            "name": "Avocado & Cucumber Maki",
+            "price": "$3.50",
+            "description": ""
+          },
+          {
+            "name": "Kappa Maki",
+            "price": "$3.50",
+            "description": "Cucumber"
+          },
+          {
+            "name": "Kampyo Maki",
+            "price": "$3.50",
+            "description": "Japanese Squash"
+          },
+          {
+            "name": "Oshiko Maki",
+            "price": "$3.50",
+            "description": "Japanese Pickles"
+          },
+          {
+            "name": "Umeshiso Maki",
+            "price": "$3.50",
+            "description": "Plum & Shiso Leaf"
+          },
+          {
+            "name": "Kaiware Maki",
+            "price": "$3.50",
+            "description": "Radish Sprouts"
+          },
+          {
+            "name": "Eggplant Maki",
+            "price": "$3.75",
+            "description": ""
+          },
+          {
+            "name": "Spinach Maki",
+            "price": "$3.75",
+            "description": ""
+          },
+          {
+            "name": "Yam Maki",
+            "price": "$3.75",
+            "description": ""
+          },
+          {
+            "name": "Asparagus Maki",
+            "price": "$3.75",
+            "description": ""
+          },
+          {
+            "name": "Wakame Maki",
+            "price": "$3.75",
+            "description": "Seaweed Salad"
+          },
+          {
+            "name": "Green Bean Tempura Maki",
+            "price": "$5.75",
+            "description": ""
+          },
+          {
+            "name": "Giant Veggie Maki",
+            "price": "$5.75",
+            "description": ""
+          },
+          {
+            "name": "Futo Maki",
+            "price": "$5.50",
+            "description": ""
+          },
+          {
+            "name": "Rainbow Maki",
+            "price": "$10.95",
+            "description": "Assorted Fish"
+          },
+          {
+            "name": "Dragon Maki",
+            "price": "$9.95",
+            "description": ""
+          },
+          {
+            "name": "Kirin Maki",
+            "price": "$8.50",
+            "description": ""
+          },
+          {
+            "name": "Wickenden Maki",
+            "price": "$6.75",
+            "description": "Salmon skin, unagi. Avocado, cuke, masago"
+          },
+          {
+            "name": "Sakura Maki",
+            "price": "$11.95",
+            "description": "Eel & avocado over shrimp tempura maki"
+          },
+          {
+            "name": "Providence Maki",
+            "price": "$6.75",
+            "description": "Tuna, Salmon, masago, avocado & cucumber"
+          },
+          {
+            "name": "Soft Shell Crab Maki",
+            "price": "$8.00",
+            "description": ""
+          },
+          {
+            "name": "Shrimp Tempura Maki",
+            "price": "$7.00",
+            "description": ""
+          },
+          {
+            "name": "Spicy Shrimp Tempura Maki",
+            "price": "$6.75",
+            "description": ""
+          },
+          {
+            "name": "Akira Maki",
+            "price": "$11.95",
+            "description": "Shrimp tempura with avocado on the outside"
+          },
+          {
+            "name": "Red Sox Maki",
+            "price": "$12.95",
+            "description": "Shrimp tempura, avocado inside topped with masago, spicy crab"
+          }
+        ],
+        "description": "6 Pcs per other order. Hand Roll, 1 Pc Roll"
+      },
+      {
+        "sectionName": "Sushi Bar Appetizers",
+        "items": [
+          {
+            "name": "Yellow Tail Jalapeno",
+            "price": "$11.95",
+            "description": "6 thin slices of yellowtail topped with jalapenos in yusu vinaigrette"
+          },
+          {
+            "name": "White Tuna Tataki",
+            "price": "$8.95",
+            "description": "Seared slices of white tuna in house special sweet sauce"
+          },
+          {
+            "name": "Red Tuna Tataki",
+            "price": "$8.95",
+            "description": "Seared slices of red tuna in house special sweet sauce"
+          },
+          {
+            "name": "Super Crunch",
+            "price": "$6.50",
+            "description": "Potato Chips topped with spicy tuna"
+          },
+          {
+            "name": "Naruto Maki",
+            "price": "$10.00",
+            "description": "Salmon, tuna, kani, avocado, fish egg wrapped with cucumber"
+          },
+          {
+            "name": "Sakura Flower",
+            "price": "$10.00",
+            "description": "Inside with Lobster, Kani, Spicy Mayo outside with baked Salmon"
+          },
+          {
+            "name": "Spicy Sandwich Sushi",
+            "price": "$8.25",
+            "description": "Choice of spicy tuna, spicy salmon, spicy yellowtail. For spicy lobster add $1.5"
+          },
+          {
+            "name": "Sunomono",
+            "price": "$6.00",
+            "description": "Sliced fishcake and fresh fish in yuzu sauce"
+          },
+          {
+            "name": "Sashimi Appetizer",
+            "price": "$7.00",
+            "description": ""
+          },
+          {
+            "name": "Ebi No Denguku",
+            "price": "$4.25",
+            "description": "Cooked Shrimp seasoned with Miso Sauce"
+          },
+          {
+            "name": "Ebi Su",
+            "price": "$4.25",
+            "description": "Cooked Shrimp seasoned with Rice Vinegar"
+          },
+          {
+            "name": "Tako Su",
+            "price": "$4.75",
+            "description": "Octopus Seasoned with Rice Vinegar"
+          },
+          {
+            "name": "Baby Tako",
+            "price": "$8.25",
+            "description": ""
+          }
+        ],
+        "description": ""
+      },
+      {
+        "sectionName": "Chef's Special Roll",
+        "items": [
+          {
+            "name": "Green Bean Tempura Chef's Special Maki",
+            "price": "$5.75",
+            "description": ""
+          },
+          {
+            "name": "Giant Veggie Chef's Special Maki",
+            "price": "$5.75",
+            "description": ""
+          },
+          {
+            "name": "Futo Chef's Special Maki",
+            "price": "$5.50",
+            "description": ""
+          },
+          {
+            "name": "Shrimp Tempura Chef's Special Maki",
+            "price": "$7.00",
+            "description": ""
+          },
+          {
+            "name": "Soft Shell Crab Chef's Special Maki",
+            "price": "$8.00",
+            "description": ""
+          },
+          {
+            "name": "Rainbow Chef's Special Maki",
+            "price": "$10.95",
+            "description": "Assorted Fish"
+          },
+          {
+            "name": "Dragon Chef's Special Maki",
+            "price": "$9.95",
+            "description": ""
+          },
+          {
+            "name": "Kirin Chef's Special Maki",
+            "price": "$8.50",
+            "description": ""
+          },
+          {
+            "name": "Wickenden Chef's Special Maki",
+            "price": "$6.75",
+            "description": "Salmon skin, unagi. Avocado, cuke, masago"
+          },
+          {
+            "name": "Sakura Chef's Special Maki",
+            "price": "$11.95",
+            "description": "Eel & avocado over shrimp tempura maki"
+          },
+          {
+            "name": "Providence Chef's Special Maki",
+            "price": "$6.75",
+            "description": "Tuna, Salmon, masago, avocado & cucumber"
+          },
+          {
+            "name": "Spicy Shrimp Tempura Chef's Special Maki",
+            "price": "$6.75",
+            "description": ""
+          },
+          {
+            "name": "Akira Chef's Special Maki",
+            "price": "$11.95",
+            "description": "Shrimp tempura with avocado on the outside"
+          },
+          {
+            "name": "Avocado Tempura Chef's Special Maki",
+            "price": "$6.50",
+            "description": ""
+          },
+          {
+            "name": "Rhode Island Chef's Special Maki",
+            "price": "$8.75",
+            "description": "Inside Salmon, Avocado, cream cheese, fried tempura wrap with soy"
+          },
+          {
+            "name": "Red Sox Chef's Special Maki",
+            "price": "$12.95",
+            "description": "Shrimp tempura, avocado inside topped with masago, spicy crab"
+          },
+          {
+            "name": "Samurai Chef's Special Roll",
+            "price": "$12.95",
+            "description": "Shrimp tempura and avocado inside, topped with cooked lobster and crunchy."
+          },
+          {
+            "name": "Fuji Chef's Special Roll",
+            "price": "$15.95",
+            "description": "Shrimp tempura, smoked eel and spicy tuna."
+          },
+          {
+            "name": "Hot Babe Chef's Special Roll",
+            "price": "$12.95",
+            "description": "Shrimp tempura and avocado inside, topped with spicy tuna."
+          },
+          {
+            "name": "Osaka Chef's Special Roll",
+            "price": "$12.95",
+            "description": "Spicy lobster and cucumber inside, topped with eel, avocado and crunchy."
+          },
+          {
+            "name": "Lost Control Chef's Special Roll",
+            "price": "$12.95",
+            "description": "Spicy salmon, cucumber and avocado inside, topped with salmon, tuna and yellowtail."
+          },
+          {
+            "name": "Tiger Chef's Special Roll",
+            "price": "$13.95",
+            "description": "Tuna, salmon yellowtail, avocado, cucumber and masago inside, topped with salmon and white tuna."
+          },
+          {
+            "name": "Fire Dragon Chef's Special Roll",
+            "price": "$13.95",
+            "description": "Shrimp tempura, eel, avocado, cucumber and crunchy inside, topped with salmon and white tuna."
+          },
+          {
+            "name": "American Dream Chef's Special Roll",
+            "price": "$12.95",
+            "description": "Spicy lobster, kani, mango and cucumber inside topped with avocado."
+          },
+          {
+            "name": "Four Season Chef's Special Roll",
+            "price": "$12.95",
+            "description": "Eel, mango, avocado, cucumber inside, topped with spicy salmon."
+          },
+          {
+            "name": "King Crab Sushi Chef's Special Roll",
+            "price": "$8.75",
+            "description": ""
+          },
+          {
+            "name": "King Crab Sashimi Chef's Special Roll",
+            "price": "$8.75",
+            "description": ""
+          },
+          {
+            "name": "King Crab Chef's Special Roll",
+            "price": "$13.95",
+            "description": "King crab cucmber inside with topped w/ eel masago and avocado"
+          },
+          {
+            "name": "Sushi Bullets Chef's Special Roll",
+            "price": "$13.95",
+            "description": "Avocado, cream cheese, asparagus, topped with hot fire torched spicy tuna"
+          },
+          {
+            "name": "Sweet Heart Chef's Special Roll",
+            "price": "$12.95",
+            "description": "Spicy Tuna inside, topped with tuna"
+          },
+          {
+            "name": "Crazy Chef's Special Roll",
+            "price": "$12.95",
+            "description": "Shrimp tempura, mango and avocado inside, topped with spicy salmon."
+          },
+          {
+            "name": "I Love You Chef's Special Roll",
+            "price": "$12.95",
+            "description": "Spicy tuna, avocado, mango and cucumber inside, topped with spicy lobster."
+          },
+          {
+            "name": "Sunshine Chef's Special Roll",
+            "price": "$12.95",
+            "description": "Spicy yellowtail and cucumber inside, topped with tuna and salmon."
+          },
+          {
+            "name": "Chicken Tempura Chef's Special Roll",
+            "price": "$8.00",
+            "description": "Fried chicken tender with smelt roe inside."
+          },
+          {
+            "name": "Chicken Tempura & Avocado Chef's Special Roll",
+            "price": "$12.95",
+            "description": "Fried chicken tender with masago inside with avocado on the top."
+          },
+          {
+            "name": "California Tempura Chef's Special Roll",
+            "price": "$12.95",
+            "description": "Crab, avocado and smelt roe."
+          },
+          {
+            "name": "Spicy Tuna Tempura Chef's Special Roll",
+            "price": "$12.95",
+            "description": ""
+          },
+          {
+            "name": "Spicy Salmon Tempura Chef's Special Roll",
+            "price": "$12.95",
+            "description": ""
+          },
+          {
+            "name": "Philadelphia Tempura Chef's Special Roll",
+            "price": "$12.95",
+            "description": "Cream cheese, smoked salmon and scallions inside out."
+          },
+          {
+            "name": "Spicy Lobster Salad Chef's Special Roll",
+            "price": "$12.95",
+            "description": ""
+          },
+          {
+            "name": "New England Chef's Special Roll",
+            "price": "$12.95",
+            "description": "Spicy tuna on top with smoked eel inside."
+          }
+        ],
+        "description": ""
+      },
+      {
+        "sectionName": "Sushi Dinner",
+        "items": [
+          {
+            "name": "Sushi Regular Dinner",
+            "price": "$18.50",
+            "description": "8 pieces of Nigiri with Tekka Maki"
+          },
+          {
+            "name": "Sashimi Regular Dinner",
+            "price": "$19.75",
+            "description": "6 varieties of sliced fish served with rice on the side"
+          },
+          {
+            "name": "Sushi Deluxe Dinner",
+            "price": "$21.00",
+            "description": "10 Pieces of Nigiri with California Maki"
+          },
+          {
+            "name": "Sashimi Deluxe Dinner",
+            "price": "$21.75",
+            "description": "7 varieties of sliced fresh fish served with rice on the side"
+          },
+          {
+            "name": "Tekka Maki Dinner",
+            "price": "$14.00",
+            "description": "Your choice of 3 Rolls of Tuna or Salmon Maki"
+          },
+          {
+            "name": "Sake Maki Dinner",
+            "price": "$14.00",
+            "description": "Your choice of 3 Rolls of Tuna or Salmon Maki"
+          },
+          {
+            "name": "Maki Dinner",
+            "price": "$15.75",
+            "description": "Tekka, Kappa & California Maki"
+          },
+          {
+            "name": "Tekka Don Dinner",
+            "price": "$17.75",
+            "description": "Your choice of sliced fresh fish served over a bed of Sushi Rice"
+          },
+          {
+            "name": "Salmon Don Dinner",
+            "price": "$17.75",
+            "description": "Your choice of sliced fresh fish served over a bed of Sushi Rice"
+          },
+          {
+            "name": "Vegetable Maki Dinner",
+            "price": "$13.50",
+            "description": "Choice of any 3 Rolls"
+          },
+          {
+            "name": "Love Boat Dinner for 2",
+            "price": "$49.95",
+            "description": "10 pcs of Sushi and 15 Pcs Sashimi with Akira Roll & California Roll"
+          },
+          {
+            "name": "Sushi & Sashimi Combination Dinner",
+            "price": "$22.00",
+            "description": "6 Pcs of Nigiri, 9 slices of fresh fish, one combination maki (Salmon & Tuna)"
+          },
+          {
+            "name": "Sushi & Maki Combination Dinner",
+            "price": "$19.50",
+            "description": "3 Pcs of tuna, 3 pcs of salmon nigiri, one tuna maki & one Salmon roll"
+          },
+          {
+            "name": "Oyako Don Dinner",
+            "price": "$18.00",
+            "description": "Slices of Fresh Salmon with Salmon roe served over a bed of sushi rice"
+          },
+          {
+            "name": "Spicy Maki Dinnner",
+            "price": "$17.50",
+            "description": "1 Spicy Tekka, 1 Spicy Salmon maki & 1 Spicy Eel with Avocado maki"
+          },
+          {
+            "name": "Sushi Dinner For 3",
+            "price": "$69.75",
+            "description": "1 California Egg roll, Spicy yellowtail roll, 15 pcs of Sashimi, 15 pcs of Nigiri"
+          },
+          {
+            "name": "Chirashi Dinner",
+            "price": "$19.00",
+            "description": "18 Pcs pf Sashimi over Sushi Rice"
+          }
+        ],
+        "description": "Served with Soup, Salad"
+      }
+    ]
+  },
+  {
+    "menuName": "Hibachi Entree",
+    "description": "All Served With Soup,Salad,Fried Rice or White Rice,2 Pleces Shrimp Appetizer & Vegetables",
+    "sections": [
+      {
+        "sectionName": "Single item",
+        "items": [
+          {
+            "name": "Vegetable",
+            "price": "$12.50",
+            "description": ""
+          },
+          {
+            "name": "Chicken",
+            "price": "$15.50",
+            "description": ""
+          },
+          {
+            "name": "Sirloin Steak",
+            "price": "$17.50",
+            "description": ""
+          },
+          {
+            "name": "Shrimp",
+            "price": "$17.50",
+            "description": ""
+          },
+          {
+            "name": "Salmon",
+            "price": "$17.50",
+            "description": ""
+          },
+          {
+            "name": "Scallop",
+            "price": "$18.50",
+            "description": ""
+          },
+          {
+            "name": "Filet Mignon",
+            "price": "$22.00",
+            "description": ""
+          },
+          {
+            "name": "Twin Lobster Tail",
+            "price": "$28.00",
+            "description": ""
+          },
+          {
+            "name": "Squid",
+            "price": "$18.50",
+            "description": ""
+          }
+        ],
+        "description": ""
+      },
+      {
+        "sectionName": "Combination Dinner",
+        "items": [
+          {
+            "name": "Chicken & Shrimp",
+            "price": "$19.95",
+            "description": ""
+          },
+          {
+            "name": "Sirloin Steak & Shrimp",
+            "price": "$21.95",
+            "description": ""
+          },
+          {
+            "name": "Chicken & Steak & Shrimp",
+            "price": "$19.95",
+            "description": ""
+          },
+          {
+            "name": "Chicken & Salmon",
+            "price": "$20.00",
+            "description": ""
+          },
+          {
+            "name": "Sirloin Steak & Salmon",
+            "price": "$22.00",
+            "description": ""
+          },
+          {
+            "name": "Chicken & Scallop",
+            "price": "$20.00",
+            "description": ""
+          },
+          {
+            "name": "Sirloin Steak & Scallop",
+            "price": "$22.00",
+            "description": ""
+          },
+          {
+            "name": "Lobster Tail & Chicken",
+            "price": "$24.00",
+            "description": ""
+          },
+          {
+            "name": "Filet Mignon & Chicken",
+            "price": "$24.00",
+            "description": ""
+          },
+          {
+            "name": "Lobster Tail & Beef",
+            "price": "$26.00",
+            "description": ""
+          },
+          {
+            "name": "Filet Mignon & Shrimp",
+            "price": "$26.00",
+            "description": ""
+          },
+          {
+            "name": "Lobster Tail & Shrimp",
+            "price": "$26.00",
+            "description": ""
+          },
+          {
+            "name": "Filet Mignon & Scallop",
+            "price": "$26.00",
+            "description": ""
+          },
+          {
+            "name": "Lobster Tail & Scallop",
+            "price": "$26.00",
+            "description": ""
+          },
+          {
+            "name": "Filet Mignon & Lobster Tail",
+            "price": "$30.00",
+            "description": ""
+          },
+          {
+            "name": "Sakura Seafood",
+            "price": "$32.00",
+            "description": "Shrimp,Scallop & Lobster Tail"
+          }
+        ],
+        "description": ""
+      }
+    ]
+  },
+  {
+    "menuName": "Lunch",
+    "description": "",
+    "sections": [
+      {
+        "sectionName": "Udon Lunch",
+        "items": [
+          {
+            "name": "Yasai udon Lunch",
+            "price": "$6.75",
+            "description": "Mixed Vegetable"
+          },
+          {
+            "name": "Shrimp & Vegetable Tempura Udon Lunch",
+            "price": "$6.75",
+            "description": ""
+          },
+          {
+            "name": "Oyako Udan Lunch",
+            "price": "$6.75",
+            "description": "Chicken Chunks with Vegetable and egg"
+          },
+          {
+            "name": "Ahiru Udon Lunch",
+            "price": "$6.75",
+            "description": "Sliver of roast duck with scallions"
+          },
+          {
+            "name": "Tanin Udon Lunch",
+            "price": "$6.75",
+            "description": "Beef chunks with vegetable and egg"
+          },
+          {
+            "name": "Kari Udon (Curry) Lunch",
+            "price": "$6.75",
+            "description": "Choice of Vegetable, Chicken or Beef"
+          }
+        ],
+        "description": "Thick Noodles. Served Daily From 11:00 am - 4:00 pm."
+      },
+      {
+        "sectionName": "Donburi Lunch",
+        "items": [
+          {
+            "name": "Yasai Donburi Lunch",
+            "price": "$6.75",
+            "description": "Mixed Vegetable"
+          },
+          {
+            "name": "Shrimp & Vegetable Tempura Donburi Lunch",
+            "price": "$6.75",
+            "description": ""
+          },
+          {
+            "name": "Oyako Donburi Lunch",
+            "price": "$6.75",
+            "description": "Chicken chunks with vegetable and egg"
+          },
+          {
+            "name": "Ahiru Donburi Lunch",
+            "price": "$6.75",
+            "description": "Sliver of roast duck with scallions"
+          },
+          {
+            "name": "Tanin Donburi Lunch",
+            "price": "$6.75",
+            "description": "Beef chunks with vegetable and egg"
+          },
+          {
+            "name": "Kari Donburi (Curry) Lunch",
+            "price": "$6.75",
+            "description": "Choice of Vegetable, Chicken or Beef"
+          }
+        ],
+        "description": "Served Daily From 11:00 am - 4:00 pm. Served over a bowl of steamed white rice"
+      },
+      {
+        "sectionName": "Kitchen Special Lunch",
+        "items": [
+          {
+            "name": "Chicken Teriyaki Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": "Chicken breast sauteed teriyaki sauce"
+          },
+          {
+            "name": "Chicken Wakadri Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": "Fried battered chicken breast"
+          },
+          {
+            "name": "Chicken Tatsuta Ageh Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": "Lightly fried chicken chunks topped with sweet ginger sauce"
+          },
+          {
+            "name": "Pork Shogayaki Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": "Pork cutlet sauteed in sweet ginger sauce"
+          },
+          {
+            "name": "Tonkatsu Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": "Fried battered pork cutlet served with tonkatsu sauce"
+          },
+          {
+            "name": "Katsu Don Kitchen Special Lunch",
+            "price": "$8.75",
+            "description": "Fried battered pork cutlet served with tonkatsu sauce"
+          },
+          {
+            "name": "Beef Teriyaki Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": "Beef tender loin sauteed in teriyaki sauce"
+          },
+          {
+            "name": "Beef Negimaki Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": "Barbecued Beef Rolls with Scallions"
+          },
+          {
+            "name": "Salmon Teriyaki Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": ""
+          },
+          {
+            "name": "Tuna Teriyaki Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": ""
+          },
+          {
+            "name": "Shrimp Teriyaki Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": ""
+          },
+          {
+            "name": "Scallop Teriyaki Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": ""
+          },
+          {
+            "name": "Yasai Tempura Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": "Assorted lightly fried vegetable"
+          },
+          {
+            "name": "Shrimp & Vegetable Tempura Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": ""
+          },
+          {
+            "name": "Chicken & Vegetable Tempura Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": ""
+          },
+          {
+            "name": "Chicken & Fried Rice Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": ""
+          },
+          {
+            "name": "Shrimp Fried Rice Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": ""
+          },
+          {
+            "name": "Yaki Soba (Vegetarian) Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": "Add $2.00 With chicken or shrimp"
+          },
+          {
+            "name": "Yaki Udon (Vegetarian) Kitchen Special Lunch",
+            "price": "$8.25",
+            "description": "Add $2.00 With chicken or shrimp"
+          }
+        ],
+        "description": "Served Daily From 11:00 am - 4:00 pm. Served with Soup, Salad and Steamed White Rice"
+      },
+      {
+        "sectionName": "Sushi Lunch",
+        "items": [
+          {
+            "name": "Sushi Lunch",
+            "price": "$9.95",
+            "description": "One California roll, cut into 6 piece, and your choice of 2 orders (4 piece) of Nigiri: Choose from tuna, salmon, mackerel, crab, shrimp, tamago, Inari tai, Suzuki"
+          },
+          {
+            "name": "Sashimi Lunch",
+            "price": "$9.95",
+            "description": "9 pieces if assorted fish, served with a bowl rice"
+          },
+          {
+            "name": "Maki Lunch",
+            "price": "$9.95",
+            "description": "2 piceces of Nigiri tuna and salmon, and your choice of 2 rolls: California takka, salmon, salmon & Avocado, Ebi & Cucumber, Kappa, Avocado, Cucumber & Avocado"
+          },
+          {
+            "name": "Veggie Sushi Lunch",
+            "price": "$8.95",
+            "description": "5 pieces of veggie Nigiri spinach, asparagus, Oshinka, campia Inari and your choice of one roll"
+          },
+          {
+            "name": "Tekka Don Lunch",
+            "price": "$10.95",
+            "description": "Slices of tuna over a bed of sushi rice"
+          },
+          {
+            "name": "Sake Don Lunch",
+            "price": "$10.95",
+            "description": "Slices of salmon over a bed of sushi rice"
+          },
+          {
+            "name": "Una Don Lunch",
+            "price": "$9.95",
+            "description": "Slices of broiled eel with special sweet sauce over over a bed of Sushi rice"
+          },
+          {
+            "name": "Unakyu Maki & Salmon Skin Roll Lunch",
+            "price": "$9.95",
+            "description": ""
+          },
+          {
+            "name": "Oyako Donburi Lunch",
+            "price": "$9.95",
+            "description": "Slices of fresh salmon with salmon roe (ikura) served over a bed of sushi rice"
+          }
+        ],
+        "description": "Served Daily From 11:00 am - 4:00 pm. Served with miso soup & salad."
+      },
+      {
+        "sectionName": "Lunch Bento Boxes",
+        "items": [
+          {
+            "name": "Chicken Teriyaki Lunch Bento Boxes",
+            "price": "$11.75",
+            "description": ""
+          },
+          {
+            "name": "Chicken Wakadoi Lunch Bento Boxes",
+            "price": "$11.75",
+            "description": ""
+          },
+          {
+            "name": "Chicken Tatsuta Ageh Lunch Bento Boxes",
+            "price": "$11.75",
+            "description": ""
+          },
+          {
+            "name": "Pork Shogayaki Lunch Bento Boxes",
+            "price": "$11.75",
+            "description": ""
+          },
+          {
+            "name": "Tonkatsu Lunch Bento Boxes",
+            "price": "$11.75",
+            "description": ""
+          },
+          {
+            "name": "Beef Teriyaki Lunch Bento Boxes",
+            "price": "$11.75",
+            "description": ""
+          },
+          {
+            "name": "Beef Negimaki Lunch Bento Boxes",
+            "price": "$11.75",
+            "description": ""
+          },
+          {
+            "name": "Shrimp Teriyaki Lunch Bento Boxes",
+            "price": "$11.75",
+            "description": ""
+          },
+          {
+            "name": "Vegetable Tempura Lunch Bento Boxes",
+            "price": "$11.75",
+            "description": ""
+          },
+          {
+            "name": "Chicken Tempura Lunch Bento Boxes",
+            "price": "$11.75",
+            "description": ""
+          },
+          {
+            "name": "Shrimp Tempura Lunch Bento Boxes",
+            "price": "$11.75",
+            "description": ""
+          }
+        ],
+        "description": "Served with soup, salad, steamed white rice, four pieces of fried Gyoza (Fried pork dumpling) & one roll (6 pieces of California or vegetable)"
+      }
+    ]
+  }
+]
