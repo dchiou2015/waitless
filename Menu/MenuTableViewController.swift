@@ -36,7 +36,7 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
         return Menu(json: json)
     }()
     
-    var order = [MenuItem: Int]()
+    var order = NSMutableSet()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,16 +56,19 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
     
     func updateOrder(item: MenuItem) {
         if item.count == 0 {
-            order[item] = nil
+            order.removeObject(item)
         } else {
-            order[item] = item.count
+            order.addObject(item)
         }
         updateOrderCount()
     }
     
     func updateOrderCount() {
         var total = 0
-        total = order.values.array.reduce(total) { $1 + $0 }
+        let items = order.allObjects as [MenuItem]
+        for item in items {
+            total += item.count
+        }
         orderCountBarButtonItem.title = "\(total) items in order".uppercaseString
         if total == 0 {
             finishBarButtonItem.enabled = false
@@ -95,7 +98,7 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
     
     @IBAction func finish(sender: UIBarButtonItem) {
         let controller = storyboard!.instantiateViewControllerWithIdentifier("Order") as OrderViewController
-        controller.order = order.keys.array
+        controller.order = order.allObjects as [MenuItem]
         controller.presentSoftModalInViewController(view.window!.rootViewController)
     }
     
@@ -110,10 +113,10 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
     }
     
     func clearOrder() {
-        for k in order.keys {
-            k.count = 0
-            order[k] = nil
+        for item in order.allObjects as [MenuItem] {
+            item.count = 0
         }
+        order.removeAllObjects()
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
