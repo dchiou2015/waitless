@@ -10,6 +10,7 @@
 		14005F231ABE6C7400EF597D /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14005F221ABE6C7400EF597D /* MenuTableViewController.swift */; };
 		14005F271ABE7ABC00EF597D /* UIViewController+SoftModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 14005F261ABE7ABC00EF597D /* UIViewController+SoftModal.m */; };
 		14005F2A1ABE7B0200EF597D /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 14005F291ABE7B0200EF597D /* UIImage+ImageEffects.m */; };
+		14162CB31AC8EDF4001E8FEE /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14162CB21AC8EDF4001E8FEE /* EditViewController.swift */; };
 		14266E421AC503EE0086F9A8 /* MenuSectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14266E411AC503EE0086F9A8 /* MenuSectionsTableViewController.swift */; };
 		14266E441AC521390086F9A8 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14266E431AC521390086F9A8 /* OrderViewController.swift */; };
 		14266E461AC5226C0086F9A8 /* OrderTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14266E451AC5226C0086F9A8 /* OrderTableCell.swift */; };
@@ -18,7 +19,7 @@
 		1488F5271ABE63FF00E1A1E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1488F5261ABE63FF00E1A1E1 /* Images.xcassets */; };
 		1488F52A1ABE63FF00E1A1E1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1488F5281ABE63FF00E1A1E1 /* LaunchScreen.xib */; };
 		1488F5461ABE641C00E1A1E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488F5451ABE641C00E1A1E1 /* AppDelegate.swift */; };
-		1488F5481ABE641C00E1A1E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488F5471ABE641C00E1A1E1 /* ViewController.swift */; };
+		1488F5481ABE641C00E1A1E1 /* TableOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488F5471ABE641C00E1A1E1 /* TableOrderViewController.swift */; };
 		1488F54B1ABE641C00E1A1E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1488F5491ABE641C00E1A1E1 /* Main.storyboard */; };
 		1488F54D1ABE641C00E1A1E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1488F54C1ABE641C00E1A1E1 /* Images.xcassets */; };
 		1488F5501ABE641C00E1A1E1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1488F54E1ABE641C00E1A1E1 /* LaunchScreen.xib */; };
@@ -27,6 +28,12 @@
 		14A2B7411AC38D8F000A06EA /* menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A2B7401AC38D8F000A06EA /* menu.swift */; };
 		14A2B7451AC3C18D000A06EA /* MenuTableShortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A2B7441AC3C18D000A06EA /* MenuTableShortCell.swift */; };
 		14A2B7471AC3C26B000A06EA /* MenuTableLongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A2B7461AC3C26B000A06EA /* MenuTableLongCell.swift */; };
+		14B576CF1AC8952D000A3453 /* menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A2B7401AC38D8F000A06EA /* menu.swift */; };
+		14B576D01AC8952F000A3453 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A2B73E1AC38AE2000A06EA /* SwiftyJSON.swift */; };
+		14B576D11AC89532000A3453 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 14A2B73C1AC38A4B000A06EA /* menu.json */; };
+		14B576D31AC89C46000A3453 /* TableOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B576D21AC89C46000A3453 /* TableOrderCell.swift */; };
+		14B576D51AC89CD8000A3453 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B576D41AC89CD8000A3453 /* CameraViewController.swift */; };
+		14C15A411AC9021B00A34D8C /* MTBBarcodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C15A401AC9021B00A34D8C /* MTBBarcodeScanner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,7 @@
 		14005F261ABE7ABC00EF597D /* UIViewController+SoftModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SoftModal.m"; sourceTree = "<group>"; };
 		14005F281ABE7B0200EF597D /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		14005F291ABE7B0200EF597D /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		14162CB21AC8EDF4001E8FEE /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		14266E411AC503EE0086F9A8 /* MenuSectionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSectionsTableViewController.swift; sourceTree = "<group>"; };
 		14266E431AC521390086F9A8 /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		14266E451AC5226C0086F9A8 /* OrderTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableCell.swift; sourceTree = "<group>"; };
@@ -48,7 +56,7 @@
 		1488F5411ABE641C00E1A1E1 /* Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1488F5441ABE641C00E1A1E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1488F5451ABE641C00E1A1E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1488F5471ABE641C00E1A1E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1488F5471ABE641C00E1A1E1 /* TableOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableOrderViewController.swift; sourceTree = "<group>"; };
 		1488F54A1ABE641C00E1A1E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1488F54C1ABE641C00E1A1E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1488F54F1ABE641C00E1A1E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -57,6 +65,11 @@
 		14A2B7401AC38D8F000A06EA /* menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menu.swift; sourceTree = "<group>"; };
 		14A2B7441AC3C18D000A06EA /* MenuTableShortCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableShortCell.swift; sourceTree = "<group>"; };
 		14A2B7461AC3C26B000A06EA /* MenuTableLongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableLongCell.swift; sourceTree = "<group>"; };
+		14B576D21AC89C46000A3453 /* TableOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOrderCell.swift; sourceTree = "<group>"; };
+		14B576D41AC89CD8000A3453 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		14C15A3E1AC9021B00A34D8C /* Scanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scanner-Bridging-Header.h"; sourceTree = "<group>"; };
+		14C15A3F1AC9021B00A34D8C /* MTBBarcodeScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTBBarcodeScanner.h; sourceTree = "<group>"; };
+		14C15A401AC9021B00A34D8C /* MTBBarcodeScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTBBarcodeScanner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +93,7 @@
 		1488F50F1ABE63E700E1A1E1 = {
 			isa = PBXGroup;
 			children = (
+				14B576CE1AC894EB000A3453 /* Common */,
 				1488F51C1ABE63FF00E1A1E1 /* Menu */,
 				1488F5421ABE641C00E1A1E1 /* Scanner */,
 				1488F51B1ABE63FF00E1A1E1 /* Products */,
@@ -103,7 +117,6 @@
 				14266E411AC503EE0086F9A8 /* MenuSectionsTableViewController.swift */,
 				14A2B7441AC3C18D000A06EA /* MenuTableShortCell.swift */,
 				14A2B7461AC3C26B000A06EA /* MenuTableLongCell.swift */,
-				14A2B73C1AC38A4B000A06EA /* menu.json */,
 				14005F251ABE7ABC00EF597D /* UIViewController+SoftModal.h */,
 				14005F261ABE7ABC00EF597D /* UIViewController+SoftModal.m */,
 				14005F281ABE7B0200EF597D /* UIImage+ImageEffects.h */,
@@ -111,8 +124,6 @@
 				1488F51F1ABE63FF00E1A1E1 /* AppDelegate.swift */,
 				1488F5231ABE63FF00E1A1E1 /* Main.storyboard */,
 				14005F221ABE6C7400EF597D /* MenuTableViewController.swift */,
-				14A2B73E1AC38AE2000A06EA /* SwiftyJSON.swift */,
-				14A2B7401AC38D8F000A06EA /* menu.swift */,
 				1488F5261ABE63FF00E1A1E1 /* Images.xcassets */,
 				1488F5281ABE63FF00E1A1E1 /* LaunchScreen.xib */,
 				1488F51D1ABE63FF00E1A1E1 /* Supporting Files */,
@@ -132,12 +143,18 @@
 		1488F5421ABE641C00E1A1E1 /* Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				14C15A3F1AC9021B00A34D8C /* MTBBarcodeScanner.h */,
+				14C15A401AC9021B00A34D8C /* MTBBarcodeScanner.m */,
+				14162CB21AC8EDF4001E8FEE /* EditViewController.swift */,
+				14B576D41AC89CD8000A3453 /* CameraViewController.swift */,
 				1488F5451ABE641C00E1A1E1 /* AppDelegate.swift */,
-				1488F5471ABE641C00E1A1E1 /* ViewController.swift */,
+				1488F5471ABE641C00E1A1E1 /* TableOrderViewController.swift */,
 				1488F5491ABE641C00E1A1E1 /* Main.storyboard */,
+				14B576D21AC89C46000A3453 /* TableOrderCell.swift */,
 				1488F54C1ABE641C00E1A1E1 /* Images.xcassets */,
 				1488F54E1ABE641C00E1A1E1 /* LaunchScreen.xib */,
 				1488F5431ABE641C00E1A1E1 /* Supporting Files */,
+				14C15A3E1AC9021B00A34D8C /* Scanner-Bridging-Header.h */,
 			);
 			path = Scanner;
 			sourceTree = "<group>";
@@ -148,6 +165,17 @@
 				1488F5441ABE641C00E1A1E1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14B576CE1AC894EB000A3453 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				14A2B73C1AC38A4B000A06EA /* menu.json */,
+				14A2B7401AC38D8F000A06EA /* menu.swift */,
+				14A2B73E1AC38AE2000A06EA /* SwiftyJSON.swift */,
+			);
+			name = Common;
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1488F54B1ABE641C00E1A1E1 /* Main.storyboard in Resources */,
+				14B576D11AC89532000A3453 /* menu.json in Resources */,
 				1488F5501ABE641C00E1A1E1 /* LaunchScreen.xib in Resources */,
 				1488F54D1ABE641C00E1A1E1 /* Images.xcassets in Resources */,
 			);
@@ -269,8 +298,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1488F5481ABE641C00E1A1E1 /* ViewController.swift in Sources */,
+				1488F5481ABE641C00E1A1E1 /* TableOrderViewController.swift in Sources */,
+				14B576D31AC89C46000A3453 /* TableOrderCell.swift in Sources */,
+				14B576D01AC8952F000A3453 /* SwiftyJSON.swift in Sources */,
+				14C15A411AC9021B00A34D8C /* MTBBarcodeScanner.m in Sources */,
 				1488F5461ABE641C00E1A1E1 /* AppDelegate.swift in Sources */,
+				14B576CF1AC8952D000A3453 /* menu.swift in Sources */,
+				14B576D51AC89CD8000A3453 /* CameraViewController.swift in Sources */,
+				14162CB31AC8EDF4001E8FEE /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +466,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -455,6 +491,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Scanner/Scanner-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -477,6 +514,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -494,6 +532,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Scanner/Scanner-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
