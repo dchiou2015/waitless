@@ -427,7 +427,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="4.50 x 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlO-Aj-AI4">
-                                            <rect key="frame" x="141" y="12" width="51.5" height="18.5"/>
+                                            <rect key="frame" x="141" y="12" width="52" height="19"/>
                                             <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="16"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -450,7 +450,7 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Tempura Roll" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cje-JE-1gM">
-                                            <rect key="frame" x="14" y="12" width="118.5" height="19"/>
+                                            <rect key="frame" x="14" y="12" width="119" height="19"/>
                                             <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
                                             <nil key="highlightedColor"/>
                                         </label>

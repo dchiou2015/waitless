@@ -26,12 +26,33 @@ class TableOrderViewController: UIViewController, UITableViewDataSource, UITable
         }
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.allowsMultipleSelectionDuringEditing = false
+    }
+    
     lazy var prototypeCell: TableOrderCell = {
         return self.tableView.dequeueReusableCellWithIdentifier("cell") as TableOrderCell
     }()
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return orders.count
+    }
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            orders[indexPath.section].orders.removeAtIndex(indexPath.row)
+            if orders[indexPath.section].orders.count == 0 {
+                orders.removeAtIndex(indexPath.section)
+                tableView.deleteSections(NSIndexSet(index: indexPath.section), withRowAnimation: .Automatic)
+            } else {
+                tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            }
+        }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
