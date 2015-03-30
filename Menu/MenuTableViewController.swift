@@ -44,6 +44,7 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
         updateOrderCount()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "itemChanged:", name: MenuItemChangedNotification, object: nil)
+        orderCountBarButtonItem.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "GillSans", size: 12)!], forState: UIControlState.Normal)
     }
     
     func itemChanged(notification: NSNotification) {

@@ -138,6 +138,8 @@
                                             <action selector="done:" destination="s5j-pe-Of2" id="poI-PH-G3a"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="szR-C5-2OQ"/>
+                                    <barButtonItem title="0" id="ecp-tS-pMh"/>
                                 </items>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="barTintColor" red="0.78039215689999997" green="0.1176470588" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -306,6 +308,7 @@
                         <outlet property="cancelButton" destination="abF-8b-ygI" id="J13-Ml-kru"/>
                         <outlet property="noteButton" destination="YLY-O2-6tt" id="d3h-Ma-2qk"/>
                         <outlet property="okButton" destination="jFP-94-aFc" id="ag4-sn-27q"/>
+                        <outlet property="orderCountBarButton" destination="ecp-tS-pMh" id="9Ld-q4-OrX"/>
                         <outlet property="orderLabel" destination="Hsg-Ur-YAJ" id="QEo-3M-vdc"/>
                         <outlet property="scanContainer" destination="IB7-fM-51c" id="U7r-hA-4jW"/>
                         <outlet property="scannedLabel" destination="a5E-YY-JG3" id="S4K-XU-fqg"/>

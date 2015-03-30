@@ -37,6 +37,8 @@ class CameraViewController: UIViewController {
     
     var tableNumber = -1
     
+    @IBOutlet weak var orderCountBarButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableNumberForm.layer.cornerRadius = 12
@@ -45,6 +47,7 @@ class CameraViewController: UIViewController {
         scanContainer.clipsToBounds = true
         
         tableNumberField.becomeFirstResponder()
+        orderCountBarButton.title = "0"
     }
     
     @IBAction func doneWithTableNumber() {
@@ -84,7 +87,7 @@ class CameraViewController: UIViewController {
             let order = "1 0\n" +
             "1 2\n" +
             "2 34\n" +
-            "3 5"    
+            "3 5"
             self.orderScanned(order)
         }
     }
@@ -131,6 +134,7 @@ class CameraViewController: UIViewController {
     @IBAction func ok() {
         assert(tableNumber >= 0)
         orderHandler?(tableNumber, self.orderLabel.text!)
+        orderCountBarButton.title = "\((orderCountBarButton.title!.toInt()! + 1))"
         resetScan()
     }
     
