@@ -189,7 +189,7 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="wO2-IX-hdL"/>
-                        <barButtonItem enabled="NO" title="5 ITEMS IN ORDER" id="OWA-Wx-9Dx">
+                        <barButtonItem title="5 ITEMS IN ORDER" id="OWA-Wx-9Dx">
                             <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="e0J-O6-F7i"/>
@@ -227,6 +227,8 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="clearBarButtonItem" destination="S4n-9W-4JT" id="ydN-Ud-d9p"/>
+                        <outlet property="finishArrowBarButtonItem" destination="hKB-3T-F37" id="tJG-la-EKO"/>
                         <outlet property="finishBarButtonItem" destination="lkH-UA-mgD" id="pWR-Ay-KiM"/>
                         <outlet property="orderCountBarButtonItem" destination="OWA-Wx-9Dx" id="0Jm-Zq-er3"/>
                         <outlet property="templateLabel" destination="AnF-ik-hlu" id="JiX-YH-2xY"/>

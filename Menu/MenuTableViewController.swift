@@ -18,6 +18,8 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
     @IBOutlet weak var templateLabel: UILabel!
     @IBOutlet weak var orderCountBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var finishBarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var finishArrowBarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var clearBarButtonItem: UIBarButtonItem!
     
     lazy var longCellPrototype: MenuTableLongCell! = {
         return self.tableView.dequeueReusableCellWithIdentifier("long") as MenuTableLongCell
@@ -72,9 +74,19 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
         }
         orderCountBarButtonItem.title = "\(total) items in order".uppercaseString
         if total == 0 {
+            orderCountBarButtonItem.tintColor = UIColor.clearColor()
+            orderCountBarButtonItem.enabled = false
+            clearBarButtonItem.tintColor = UIColor.clearColor()
+            clearBarButtonItem.enabled = false
             finishBarButtonItem.enabled = false
+            finishArrowBarButtonItem.enabled = false
         } else {
+            orderCountBarButtonItem.tintColor = UIColor.blackColor()
+            orderCountBarButtonItem.enabled = true
+            clearBarButtonItem.tintColor = UIColor.blackColor()
+            clearBarButtonItem.enabled = true
             finishBarButtonItem.enabled = true
+            finishArrowBarButtonItem.enabled = true
         }
     }
     
