@@ -88,7 +88,7 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
                 sectionIndex += self.menu.subMenus[i].sections.count
             }
             sectionIndex += indexPath.row
-            self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: sectionIndex), atScrollPosition: UITableViewScrollPosition.Top, animated: false)
+            self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: sectionIndex), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
         }
         controller.presentSoftModalInViewController(view.window!.rootViewController)
     }
@@ -180,12 +180,16 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
         return cell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize).height+1
     }
     
-    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        let item = menu.sectionByIndex(indexPath.section)!.items[indexPath.row]
-        if item.count == 0 {
-            return 58
-        } else {
-            return 96
-        }
-    }
+//    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        let item = menu.sectionByIndex(indexPath.section)!.items[indexPath.row]
+//        var cell: UITableViewCell
+//        if item.count == 0 {
+//            cell = shortCellPrototype
+//        } else {
+//            cell = longCellPrototype
+//        }
+//        configureCell(cell, forItem: item)
+//        cell.layoutIfNeeded()
+//        return cell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize).height+1
+//    }
 }

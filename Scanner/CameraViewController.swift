@@ -68,28 +68,29 @@ class CameraViewController: UIViewController {
     func resetScan() {
         showScanned = false
         
-//        let scanner = MTBBarcodeScanner(metadataObjectTypes: [AVMetadataObjectTypeQRCode], previewView: cameraView)
-//        MTBBarcodeScanner.requestCameraPermissionWithSuccess() {
-//            success in
-//            if success {
-//                scanner.startScanningWithResultBlock() {
-//                    let codes = $0 as [AVMetadataMachineReadableCodeObject]
-//                    let code = codes.first!
-//                    self.orderScanned(code.stringValue)
-//                    scanner.stopScanning()
-//                }
-//            } else {
-//                println("Can't access to camera!")
-//            }
-//        }
-        
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 2)), dispatch_get_main_queue()) {
-            let order = "1 0\n" +
-            "1 2\n" +
-            "2 34\n" +
-            "3 5"
-            self.orderScanned(order)
+        let scanner = MTBBarcodeScanner(metadataObjectTypes: [AVMetadataObjectTypeQRCode], previewView: cameraView)
+        MTBBarcodeScanner.requestCameraPermissionWithSuccess() {
+            success in
+            if success {
+                scanner.startScanningWithResultBlock() {
+                    let codes = $0 as [AVMetadataMachineReadableCodeObject]
+                    let code = codes.first!
+                    self.orderScanned(code.stringValue)
+                    scanner.stopScanning()
+                }
+            } else {
+                println("Can't access to camera!")
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 2)), dispatch_get_main_queue()) {
+                    let order = "1 0\n" +
+                    "1 2\n" +
+                    "2 34\n" +
+                    "3 5"
+                    self.orderScanned(order)
+                }
+            }
         }
+        
+
     }
     
     var showScanned: Bool = false {
