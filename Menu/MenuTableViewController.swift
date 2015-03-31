@@ -100,7 +100,12 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
                 sectionIndex += self.menu.subMenus[i].sections.count
             }
             sectionIndex += indexPath.row
-            self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: sectionIndex), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+            
+            let afterDismiss = dispatch_time(DISPATCH_TIME_NOW,
+                Int64(0.5 * Double(NSEC_PER_SEC)))
+            dispatch_after(afterDismiss, dispatch_get_main_queue()) {
+                self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: sectionIndex), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+            }
         }
         controller.presentSoftModalInViewController(view.window!.rootViewController)
     }
