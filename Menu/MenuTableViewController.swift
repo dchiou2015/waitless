@@ -83,21 +83,14 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
             total += item.count
         }
         orderCountBarButtonItem.title = "\(total) items in order".uppercaseString
-        if total == 0 {
-            orderCountBarButtonItem.tintColor = UIColor.clearColor()
-            orderCountBarButtonItem.enabled = false
-            clearBarButtonItem.tintColor = UIColor.clearColor()
-            clearBarButtonItem.enabled = false
-            finishBarButtonItem.enabled = false
-            finishArrowBarButtonItem.enabled = false
-        } else {
-            orderCountBarButtonItem.tintColor = UIColor.blackColor()
-            orderCountBarButtonItem.enabled = true
-            clearBarButtonItem.tintColor = UIColor.blackColor()
-            clearBarButtonItem.enabled = true
-            finishBarButtonItem.enabled = true
-            finishArrowBarButtonItem.enabled = true
-        }
+        orderCountBarButtonItem.tintColor = UIColor.blackColor()
+        orderCountBarButtonItem.enabled = true
+        clearBarButtonItem.tintColor = UIColor.blackColor()
+        clearBarButtonItem.enabled = true
+        finishBarButtonItem.enabled = true
+        finishArrowBarButtonItem.enabled = true
+        
+        navigationController!.setToolbarHidden(total == 0, animated: true)
     }
     
     @IBAction func showMenu(sender: UIBarButtonItem) {
