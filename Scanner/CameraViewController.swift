@@ -15,13 +15,12 @@ let menu: Menu = {
     return Menu(json: json)
 }()
 
-class CameraViewController: UIViewController {
+class CameraViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var cameraView: UIView!
     
     @IBOutlet weak var tableNumberField: UITextField!
     @IBOutlet weak var tableNumberForm: UIVisualEffectView!
-    @IBOutlet weak var tableNumberDoneButton: UIButton!
     
     @IBOutlet weak var scanningLabel: UILabel!
     @IBOutlet weak var scannedLabel: UILabel!
@@ -39,30 +38,36 @@ class CameraViewController: UIViewController {
     
     @IBOutlet weak var orderCountBarButton: UIBarButtonItem!
     
+    var doneBarButtonItem: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableNumberForm.layer.cornerRadius = 12
+        tableNumberForm.layer.cornerRadius = 22.5
         tableNumberForm.clipsToBounds = true
         scanContainer.layer.cornerRadius = 12
         scanContainer.clipsToBounds = true
+        
+        let toolBar = UIToolbar(frame: CGRectMake(0, 0, view.frame.width, 50))
+        toolBar.barStyle = UIBarStyle.Default
+        doneBarButtonItem = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.Done, target: self, action: "doneWithTableNumber")
+        doneBarButtonItem.enabled = false
+        toolBar.items = [UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil),
+                         doneBarButtonItem]
+        toolBar.sizeToFit()
+        tableNumberField.inputAccessoryView = toolBar
         
         tableNumberField.becomeFirstResponder()
         orderCountBarButton.title = "0"
     }
     
-    @IBAction func doneWithTableNumber() {
+    func doneWithTableNumber() {
         tableNumberField.resignFirstResponder()
-        UIView.animateWithDuration(0.3, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
-                self.tableNumberForm.transform = CGAffineTransformMakeTranslation(0, -700)
-            }, completion: {
-                _ in
-                self.tableNumberForm.removeFromSuperview()
-            })
-        
         tableNumber = tableNumberField.text.toInt()!
         assert(tableNumber >= 0)
         
-        resetScan()
+        if !showScanned {
+            resetScan()
+        }
     }
     
     func resetScan() {
@@ -112,10 +117,14 @@ class CameraViewController: UIViewController {
     @IBAction func tableNumberChanged(sender: UITextField) {
         let number = sender.text.toInt()
         if number == nil {
-            tableNumberDoneButton.enabled = false
+            doneBarButtonItem.enabled = false
         } else {
-            tableNumberDoneButton.enabled = true
+            doneBarButtonItem.enabled = true
         }
+    }
+    
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        return true
     }
     
     func orderScanned(orderText: String) {

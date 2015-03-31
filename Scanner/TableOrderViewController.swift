@@ -103,14 +103,13 @@ class TableOrderViewController: UIViewController, UITableViewDataSource, UITable
         let controller = segue.destinationViewController as CameraViewController
         controller.orderHandler = {
             tableNumber, orderString in
-            let order = self.orders.filter() { $0.tableNumber == tableNumber }
-            if order.count == 0 {
+            let order = self.orders.first
+            if order == nil || order!.tableNumber != tableNumber {
                 let newOrder = TableOrder(tableNumber)
                 newOrder.orders.append(orderString)
                 self.orders.insert(newOrder, atIndex: 0)
             } else {
-                let theOrder = order.first!
-                theOrder.orders.append(orderString)
+                order!.orders.append(orderString)
             }
             self.tableView.reloadData()
         }
