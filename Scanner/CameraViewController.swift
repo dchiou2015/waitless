@@ -48,7 +48,8 @@ class CameraViewController: UIViewController, UITextFieldDelegate {
         scanContainer.clipsToBounds = true
         
         let toolBar = UIToolbar(frame: CGRectMake(0, 0, view.frame.width, 50))
-        toolBar.barStyle = UIBarStyle.Default
+        toolBar.barStyle = UIBarStyle.BlackTranslucent
+        toolBar.tintColor = UIColor.whiteColor()
         doneBarButtonItem = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.Done, target: self, action: "doneWithTableNumber")
         doneBarButtonItem.enabled = false
         toolBar.items = [UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil),
