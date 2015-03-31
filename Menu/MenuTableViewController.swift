@@ -53,7 +53,17 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
         let item = notification.object as MenuItem
         let section = menu.indexForSection(item.parent)
         let row = item.index
-        tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: row, inSection: section)], withRowAnimation: UITableViewRowAnimation.Automatic)
+        let indexPath = NSIndexPath(forRow: row, inSection: section)
+        
+        // only animate if the cell's height is changing:
+        var shouldAnimate = false
+        if let oldCell = tableView.cellForRowAtIndexPath(indexPath) {
+            var oldCellIsLong = (oldCell as? MenuTableLongCell) != nil
+            var newCellIsLong = item.count > 0
+            shouldAnimate = oldCellIsLong != newCellIsLong
+        }
+        let animation = shouldAnimate ? UITableViewRowAnimation.Automatic : UITableViewRowAnimation.None
+        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: animation)
         updateOrder(item)
     }
     
