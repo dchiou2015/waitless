@@ -5,13 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>64F54E20-AA8B-4F81-BEE2-407C7464634A</string>
+	<string>0B9A49DB-0473-44EE-B36C-5D9E729D83A1</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Waitless</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>EAD3078302BCCFA4A33BAC6A6662955FDC5A7B1C</key>
-		<string>github.com:xiecheng59/waitless.git</string>
+		<string>https://github.com/xiecheng59/waitless.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Waitless.xcodeproj</string>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:xiecheng59/waitless.git</string>
+	<string>https://github.com/xiecheng59/waitless.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>EAD3078302BCCFA4A33BAC6A6662955FDC5A7B1C</string>
 			<key>IDESourceControlWCCName</key>
-			<string>waitless</string>
+			<string>Waitless</string>
 		</dict>
 	</array>
 </dict>

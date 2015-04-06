@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="evl-nR-h01">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="evl-nR-h01">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -393,6 +393,7 @@
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t8b-Sp-bO6">
                                     <rect key="frame" x="20" y="24" width="221" height="221"/>
                                     <constraints>
+                                        <constraint firstAttribute="width" constant="221" id="CZp-di-MA3"/>
                                         <constraint firstAttribute="width" secondItem="t8b-Sp-bO6" secondAttribute="height" multiplier="1:1" id="MMY-Bx-woS"/>
                                     </constraints>
                                 </imageView>
@@ -404,7 +405,7 @@
                                     </constraints>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Show this code to your server to order" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7P1-pN-BcM">
-                                    <rect key="frame" x="28" y="247" width="205" height="43"/>
+                                    <rect key="frame" x="28" y="247" width="205" height="42"/>
                                     <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
@@ -412,12 +413,11 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstItem="t8b-Sp-bO6" firstAttribute="leading" secondItem="WO4-bT-kV2" secondAttribute="leading" constant="20" id="D1V-VT-jMC"/>
                                 <constraint firstAttribute="trailing" secondItem="gbp-FH-nbb" secondAttribute="trailing" id="HrJ-o4-iNe"/>
                                 <constraint firstItem="t8b-Sp-bO6" firstAttribute="top" secondItem="gbp-FH-nbb" secondAttribute="bottom" constant="20" id="IiZ-Kb-CSw"/>
-                                <constraint firstAttribute="bottom" secondItem="7P1-pN-BcM" secondAttribute="bottom" id="U1z-Ak-OXg"/>
+                                <constraint firstAttribute="centerX" secondItem="t8b-Sp-bO6" secondAttribute="centerX" constant="1.5" id="TOe-oA-ZZc"/>
+                                <constraint firstAttribute="bottom" secondItem="7P1-pN-BcM" secondAttribute="bottom" constant="1" id="U1z-Ak-OXg"/>
                                 <constraint firstItem="7P1-pN-BcM" firstAttribute="top" secondItem="t8b-Sp-bO6" secondAttribute="bottom" constant="2" id="bun-Dx-YsT"/>
-                                <constraint firstAttribute="trailing" secondItem="t8b-Sp-bO6" secondAttribute="trailing" constant="23" id="jid-uG-lgR"/>
                                 <constraint firstItem="gbp-FH-nbb" firstAttribute="top" secondItem="WO4-bT-kV2" secondAttribute="top" id="keh-dX-Kkl"/>
                                 <constraint firstItem="gbp-FH-nbb" firstAttribute="leading" secondItem="WO4-bT-kV2" secondAttribute="leading" id="nqe-BB-I5G"/>
                                 <constraint firstAttribute="trailing" secondItem="7P1-pN-BcM" secondAttribute="trailing" constant="31" id="uai-Zc-kXs"/>

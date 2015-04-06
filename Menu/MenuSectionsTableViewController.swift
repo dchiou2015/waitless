@@ -27,7 +27,7 @@ class MenuSectionsTableViewController: UIViewController, UITableViewDataSource, 
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
-        cell.textLabel.text = menu.subMenus[indexPath.section].sections[indexPath.row].name
+        cell.textLabel!.text = menu.subMenus[indexPath.section].sections[indexPath.row].name
         return cell
     }
     
