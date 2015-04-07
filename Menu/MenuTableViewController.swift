@@ -207,17 +207,4 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
         let textHeight = attributedTitleForItem(item).boundingRectWithSize(CGSizeMake(tableView.bounds.size.width - insets.width, 9999), options: options, context: nil).size.height
         return ceil(textHeight + insets.height)
     }
-    
-//    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//        let item = menu.sectionByIndex(indexPath.section)!.items[indexPath.row]
-//        var cell: UITableViewCell
-//        if item.count == 0 {
-//            cell = shortCellPrototype
-//        } else {
-//            cell = longCellPrototype
-//        }
-//        configureCell(cell, forItem: item)
-//        cell.layoutIfNeeded()
-//        return cell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize).height+1
-//    }
 }
