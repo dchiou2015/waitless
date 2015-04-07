@@ -93,6 +93,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="descLabel" destination="IO4-Qt-CEQ" id="gpd-vE-TRj"/>
+                                    <outlet property="plusButton" destination="bf9-vF-f2a" id="x4z-gn-kpL"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="long" rowHeight="96" id="A0a-fV-dQV" customClass="MenuTableLongCell" customModule="Menu" customModuleProvider="target">
@@ -171,7 +172,9 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="descLabel" destination="cQf-Ia-e4W" id="0mJ-4V-2jz"/>
+                                    <outlet property="minusButton" destination="JCj-3K-TfS" id="sLv-eP-q6Y"/>
                                     <outlet property="orderLabel" destination="csx-fr-VsN" id="prP-dY-D5t"/>
+                                    <outlet property="plusButton" destination="n4s-yr-yo6" id="MYf-4g-6Tn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

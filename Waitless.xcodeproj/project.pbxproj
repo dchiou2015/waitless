@@ -35,6 +35,7 @@
 		14B576D51AC89CD8000A3453 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B576D41AC89CD8000A3453 /* CameraViewController.swift */; };
 		14C15A411AC9021B00A34D8C /* MTBBarcodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C15A401AC9021B00A34D8C /* MTBBarcodeScanner.m */; };
 		14D2D40C1ACA19D000E044C2 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D2D40B1ACA19D000E044C2 /* InfoViewController.swift */; };
+		5F8CCED31AD4565C009D200E /* UIView+FuzzyHitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8CCED21AD4565C009D200E /* UIView+FuzzyHitTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		14C15A3F1AC9021B00A34D8C /* MTBBarcodeScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTBBarcodeScanner.h; sourceTree = "<group>"; };
 		14C15A401AC9021B00A34D8C /* MTBBarcodeScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTBBarcodeScanner.m; sourceTree = "<group>"; };
 		14D2D40B1ACA19D000E044C2 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		5F8CCED21AD4565C009D200E /* UIView+FuzzyHitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FuzzyHitTest.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				14266E411AC503EE0086F9A8 /* MenuSectionsTableViewController.swift */,
 				14A2B7441AC3C18D000A06EA /* MenuTableShortCell.swift */,
 				14A2B7461AC3C26B000A06EA /* MenuTableLongCell.swift */,
+				5F8CCED21AD4565C009D200E /* UIView+FuzzyHitTest.swift */,
 				14005F251ABE7ABC00EF597D /* UIViewController+SoftModal.h */,
 				14005F261ABE7ABC00EF597D /* UIViewController+SoftModal.m */,
 				14005F281ABE7B0200EF597D /* UIImage+ImageEffects.h */,
@@ -294,6 +297,7 @@
 				14266E421AC503EE0086F9A8 /* MenuSectionsTableViewController.swift in Sources */,
 				14A2B7411AC38D8F000A06EA /* menu.swift in Sources */,
 				14005F271ABE7ABC00EF597D /* UIViewController+SoftModal.m in Sources */,
+				5F8CCED31AD4565C009D200E /* UIView+FuzzyHitTest.swift in Sources */,
 				14D2D40C1ACA19D000E044C2 /* InfoViewController.swift in Sources */,
 				14A2B7471AC3C26B000A06EA /* MenuTableLongCell.swift in Sources */,
 			);

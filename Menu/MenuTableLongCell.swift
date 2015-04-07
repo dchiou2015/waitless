@@ -14,6 +14,9 @@ class MenuTableLongCell: UITableViewCell {
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var orderLabel: UILabel!
     
+    @IBOutlet weak var plusButton: UIButton!
+    @IBOutlet weak var minusButton: UIButton!
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         self.contentView.layoutIfNeeded()
@@ -30,4 +33,7 @@ class MenuTableLongCell: UITableViewCell {
         item.count -= 1
     }
     
+    override func hitTest(point: CGPoint, withEvent event: UIEvent?) -> UIView? {
+        return fuzzyHitTestWithViews([plusButton, minusButton], point: point)
+    }
 }
