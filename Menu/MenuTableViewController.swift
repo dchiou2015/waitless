@@ -154,14 +154,7 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
     }
     
     func configureCell(cell: UITableViewCell, forItem item: MenuItem) {
-        let name = NSAttributedString(string: item.name + " ", attributes: attribStringTemplate.attributesAtIndex(0, effectiveRange: nil))
-        let desc = NSAttributedString(string: item.description! + " ", attributes: attribStringTemplate.attributesAtIndex(1, effectiveRange: nil))
-        let price = NSAttributedString(string: NSString(format: "%.2f", item.price), attributes: attribStringTemplate.attributesAtIndex(2, effectiveRange: nil))
-        let result = NSMutableAttributedString()
-        result.appendAttributedString(name)
-        result.appendAttributedString(desc)
-        result.appendAttributedString(price)
-        
+        let result = attributedTitleForItem(item)
         if item.count == 0 {
             let scell = cell as MenuTableShortCell
             scell.item = item
@@ -173,6 +166,20 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
             lcell.descLabel.attributedText = result
             lcell.orderLabel.text = "Ordering \(item.count)"
         }
+    }
+    
+    func attributedTitleForItem(item: MenuItem) -> NSAttributedString {
+        let name = NSAttributedString(string: item.name + " ", attributes: attribStringTemplate.attributesAtIndex(0, effectiveRange: nil))
+        let desc = NSAttributedString(string: item.description! + " ", attributes: attribStringTemplate.attributesAtIndex(1, effectiveRange: nil))
+        let price = NSAttributedString(string: NSString(format: "%.2f", item.price), attributes: attribStringTemplate.attributesAtIndex(2, effectiveRange: nil))
+        let result = NSMutableAttributedString()
+        result.appendAttributedString(name)
+        result.appendAttributedString(desc)
+        result.appendAttributedString(price)
+        let paragraphStyle = NSParagraphStyle.defaultParagraphStyle().mutableCopy() as NSMutableParagraphStyle
+        paragraphStyle.lineBreakMode = .ByWordWrapping
+        result.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: NSMakeRange(0, result.length))
+        return result
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -189,15 +196,16 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let item = menu.sectionByIndex(indexPath.section)!.items[indexPath.row]
-        var cell: UITableViewCell
-        if item.count == 0 {
-            cell = shortCellPrototype
-        } else {
-            cell = longCellPrototype
-        }
-        configureCell(cell, forItem: item)
-        cell.layoutIfNeeded()
-        return cell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize).height+1
+        // how much larger is the cell than the text it contains?
+        let shortCellTextInsets = CGSizeMake(320 - 256, 58 - 38)
+        let longCellTextInsets = CGSizeMake(320 - 256, 96 - 38)
+        let insets = item.count > 0 ? longCellTextInsets : shortCellTextInsets
+        
+        let options = unsafeBitCast(NSStringDrawingOptions.UsesLineFragmentOrigin.rawValue |
+            NSStringDrawingOptions.UsesFontLeading.rawValue,
+            NSStringDrawingOptions.self)
+        let textHeight = attributedTitleForItem(item).boundingRectWithSize(CGSizeMake(tableView.bounds.size.width - insets.width, 9999), options: options, context: nil).size.height
+        return ceil(textHeight + insets.height)
     }
     
 //    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

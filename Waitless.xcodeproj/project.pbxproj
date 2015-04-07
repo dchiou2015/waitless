@@ -114,6 +114,7 @@
 		1488F51C1ABE63FF00E1A1E1 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				14005F221ABE6C7400EF597D /* MenuTableViewController.swift */,
 				14266E451AC5226C0086F9A8 /* OrderTableCell.swift */,
 				14266E431AC521390086F9A8 /* OrderViewController.swift */,
 				14266E411AC503EE0086F9A8 /* MenuSectionsTableViewController.swift */,
@@ -126,7 +127,6 @@
 				1488F51F1ABE63FF00E1A1E1 /* AppDelegate.swift */,
 				1488F5231ABE63FF00E1A1E1 /* Main.storyboard */,
 				14D2D40B1ACA19D000E044C2 /* InfoViewController.swift */,
-				14005F221ABE6C7400EF597D /* MenuTableViewController.swift */,
 				1488F5261ABE63FF00E1A1E1 /* Images.xcassets */,
 				1488F5281ABE63FF00E1A1E1 /* LaunchScreen.xib */,
 				1488F51D1ABE63FF00E1A1E1 /* Supporting Files */,
