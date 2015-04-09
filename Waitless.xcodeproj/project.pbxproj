@@ -231,10 +231,11 @@
 				TargetAttributes = {
 					1488F5191ABE63FF00E1A1E1 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = VPN8ZW6EAC;
+						DevelopmentTeam = LBVDNP83QQ;
 					};
 					1488F5401ABE641C00E1A1E1 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = LBVDNP83QQ;
 					};
 				};
 			};
