@@ -13,9 +13,8 @@ let MenuItemChangedNotification = "MenuItemChangedNotification"
 class Menu {
     
     var subMenus = [SubMenu]()
-    
     private var idMap = [Int: MenuItem]()
-    
+    init() {}
     init(json: JSON) {
         for (_, obj) in json {
             let subMenu = SubMenu(json: obj)
@@ -75,9 +74,34 @@ class Menu {
         assert(false)
         return -1
     }
+    
+    func eachItem(lam: MenuItem -> ()) {
+        for subMenu in menu.subMenus {
+            for section in subMenu.sections {
+                for item in section.items {
+                    lam(item)
+                }
+            }
+        }
+    }
+    
+    func eachSection(lam: MenuSection -> ()) {
+        for subMenu in menu.subMenus {
+            for section in subMenu.sections {
+                lam(section)
+            }
+        }
+    }
+    
+    func eachSubMenu(lam: SubMenu -> ()) {
+        for subMenu in menu.subMenus {
+            lam(subMenu)
+        }
+    }
 }
 
 class SubMenu {
+    init() {}
     init(json: JSON) {
         name = json["menuName"].string!
         description = json["description"].string
@@ -88,12 +112,13 @@ class SubMenu {
         }
     }
     weak var parent: Menu!
-    let name: String
-    let description: String?
+    var name: String!
+    var description: String?
     var sections = [MenuSection]()
 }
 
 class MenuSection {
+    init() {}
     init(json: JSON) {
         name = json["sectionName"].string!
         description = json["description"].string
@@ -106,8 +131,14 @@ class MenuSection {
         }
     }
     weak var parent: SubMenu!
-    let name: String
-    let description: String?
+    var name: String!
+    var description: String?
+    var items = [MenuItem]()
+}
+
+class MenuSection1 {
+    init() {}
+    let description: String? = nil
     var items = [MenuItem]()
 }
 

@@ -14,12 +14,13 @@ extension MenuItem: Hashable {
     }
 }
 
-class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
+class MenuTableViewController: UITableViewController, UIActionSheetDelegate, UISearchBarDelegate {
     @IBOutlet weak var templateLabel: UILabel!
     @IBOutlet weak var orderCountBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var finishBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var finishArrowBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var clearBarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     lazy var longCellPrototype: MenuTableLongCell! = {
         return self.tableView.dequeueReusableCellWithIdentifier("long") as! MenuTableLongCell
@@ -32,6 +33,8 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
     var attribStringTemplate: NSAttributedString!
     
     var order = NSMutableSet()
+    
+    var currentMenu: Menu!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,9 +49,85 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
         updateOrderCount()
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        view.endEditing(true)
+        searchBar.resignFirstResponder()
+        super.viewWillDisappear(animated)
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        searchBar.text = ""
+        searchBar(searchBar, textDidChange: "")
+        super.viewDidDisappear(animated)
+    }
+    
+    @IBAction func search(sender: UIBarButtonItem) {
+        tableView.scrollRectToVisible(searchBar.frame, animated: false)
+        searchBar.becomeFirstResponder()
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        UIView.animateWithDuration(0.2) {
+            self.tableView.contentOffset.y += searchBar.frame.size.height
+        }
+    }
+    
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        menu.eachSection() {
+            var index = 0
+            for item in $0.items {
+                item.parent = $0
+                item.index = index++
+            }
+        }
+        if searchText == "" {
+            currentMenu = menu
+            tableView.reloadData()
+        } else {
+            let pattern = searchBar.text.lowercaseString
+            currentMenu = Menu()
+            for subMenu in menu.subMenus {
+                let newSubMenu = SubMenu()
+                newSubMenu.name = subMenu.name
+                newSubMenu.description = subMenu.description
+                newSubMenu.parent = currentMenu
+                var appendSubMenu = false
+                for section in subMenu.sections {
+                    let newSection = MenuSection()
+                    newSection.name = section.name
+                    newSection.description = section.description
+                    newSection.parent = newSubMenu
+                    var appendSection = false
+                    var index = 0
+                    for item in section.items {
+                        if item.name.lowercaseString.rangeOfString(pattern) != nil {
+                            item.parent = newSection
+                            item.index = index++
+                            appendSection = true
+                            newSection.items.append(item)
+                        }
+                    }
+                    if appendSection == true {
+                        appendSubMenu = true
+                        newSubMenu.sections.append(newSection)
+                    }
+                }
+                if appendSubMenu == true {
+                    currentMenu.subMenus.append(newSubMenu)
+                }
+            }
+            tableView.reloadData()
+        }
+    }
+    
     func itemChanged(notification: NSNotification) {
         let item = notification.object as! MenuItem
-        let section = menu.indexForSection(item.parent)
+        let section = currentMenu.indexForSection(item.parent)
         let row = item.index
         let indexPath = NSIndexPath(forRow: row, inSection: section)
         
@@ -115,15 +194,15 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return menu.sectionCount
+        return currentMenu.sectionCount
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return menu.sectionByIndex(section)!.items.count
+        return currentMenu.sectionByIndex(section)!.items.count
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let section = menu.sectionByIndex(section)!
+        let section = currentMenu.sectionByIndex(section)!
         return section.name.uppercaseString + " — " + section.parent.name.uppercaseString
     }
     
@@ -158,7 +237,7 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: UITableViewCell
-        let item = menu.sectionByIndex(indexPath.section)!.items[indexPath.row]
+        let item = currentMenu.sectionByIndex(indexPath.section)!.items[indexPath.row]
         if item.count == 0 {
             cell = tableView.dequeueReusableCellWithIdentifier("short", forIndexPath: indexPath) as! UITableViewCell
         } else {
@@ -169,7 +248,7 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        let item = menu.sectionByIndex(indexPath.section)!.items[indexPath.row]
+        let item = currentMenu.sectionByIndex(indexPath.section)!.items[indexPath.row]
         // how much larger is the cell than the text it contains?
         let shortCellTextInsets = CGSizeMake(320 - 256, 58 - 38)
         let longCellTextInsets = CGSizeMake(320 - 256, 96 - 38)

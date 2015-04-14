@@ -24,7 +24,7 @@ class MenuTableShortCell: UITableViewCell {
         item.count = 1
     }
     
-    override func hitTest(point: CGPoint, withEvent event: UIEvent?) -> UIView? {
-        return fuzzyHitTestWithViews([plusButton], point: point)
-    }
+//    override func hitTest(point: CGPoint, withEvent event: UIEvent?) -> UIView? {
+//        return fuzzyHitTestWithViews([plusButton], point: point)
+//    }
 }

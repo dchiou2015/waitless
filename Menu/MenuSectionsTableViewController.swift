@@ -25,6 +25,7 @@ class MenuSectionsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         menuTableViewController = storyboard!.instantiateViewControllerWithIdentifier("Menu") as! MenuTableViewController
+        menuTableViewController.currentMenu = menu
     }
     
     override func viewWillAppear(animated: Bool) {
