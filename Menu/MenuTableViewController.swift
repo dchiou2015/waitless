@@ -22,35 +22,32 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
     @IBOutlet weak var clearBarButtonItem: UIBarButtonItem!
     
     lazy var longCellPrototype: MenuTableLongCell! = {
-        return self.tableView.dequeueReusableCellWithIdentifier("long") as MenuTableLongCell
+        return self.tableView.dequeueReusableCellWithIdentifier("long") as! MenuTableLongCell
     }()
     
     lazy var shortCellPrototype: MenuTableShortCell! = {
-        return self.tableView.dequeueReusableCellWithIdentifier("short") as MenuTableShortCell
+        return self.tableView.dequeueReusableCellWithIdentifier("short") as! MenuTableShortCell
     }()
 
     var attribStringTemplate: NSAttributedString!
-    
-    var menu: Menu = {
-        let path = NSBundle.mainBundle().pathForResource("menu", ofType: "json")
-        let data = NSData(contentsOfFile: path!)
-        let json = JSON(data:data!)
-        return Menu(json: json)
-    }()
     
     var order = NSMutableSet()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         attribStringTemplate = templateLabel.attributedText
-        updateOrderCount()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "itemChanged:", name: MenuItemChangedNotification, object: nil)
         orderCountBarButtonItem.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "GillSans", size: 12)!], forState: UIControlState.Normal)
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        updateOrderCount()
+    }
+    
     func itemChanged(notification: NSNotification) {
-        let item = notification.object as MenuItem
+        let item = notification.object as! MenuItem
         let section = menu.indexForSection(item.parent)
         let row = item.index
         let indexPath = NSIndexPath(forRow: row, inSection: section)
@@ -78,7 +75,7 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
     
     func updateOrderCount() {
         var total = 0
-        let items = order.allObjects as [MenuItem]
+        let items = order.allObjects as! [MenuItem]
         for item in items {
             total += item.count
         }
@@ -93,33 +90,10 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
         navigationController!.setToolbarHidden(total == 0, animated: true)
     }
     
-    @IBAction func showMenu(sender: UIBarButtonItem) {
-        let controller = storyboard!.instantiateViewControllerWithIdentifier("Sections") as MenuSectionsTableViewController
-        controller.menu = menu
-        controller.handler = {
-            indexPath in
-            var sectionIndex = 0
-            for i in 0..<indexPath.section {
-                sectionIndex += self.menu.subMenus[i].sections.count
-            }
-            sectionIndex += indexPath.row
-            
-            let afterDismiss = dispatch_time(DISPATCH_TIME_NOW,
-                Int64(0.5 * Double(NSEC_PER_SEC)))
-            dispatch_after(afterDismiss, dispatch_get_main_queue()) {
-                self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: sectionIndex), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
-            }
-        }
-        controller.presentSoftModalInViewController(view.window!.rootViewController)
-    }
-    
-    @IBAction func showInfo(sender: UIButton) {
-        storyboard!.instantiateViewControllerWithIdentifier("Info").presentSoftModalInViewController(view.window!.rootViewController)
-    }
     
     @IBAction func finish(sender: UIBarButtonItem) {
-        let controller = storyboard!.instantiateViewControllerWithIdentifier("Order") as OrderViewController
-        controller.order = order.allObjects as [MenuItem]
+        let controller = storyboard!.instantiateViewControllerWithIdentifier("Order") as! OrderViewController
+        controller.order = order.allObjects as! [MenuItem]
         controller.presentSoftModalInViewController(view.window!.rootViewController)
     }
     
@@ -134,7 +108,7 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
     }
     
     func clearOrder() {
-        for item in order.allObjects as [MenuItem] {
+        for item in order.allObjects as! [MenuItem] {
             item.count = 0
         }
         order.removeAllObjects()
@@ -156,12 +130,12 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
     func configureCell(cell: UITableViewCell, forItem item: MenuItem) {
         let result = attributedTitleForItem(item)
         if item.count == 0 {
-            let scell = cell as MenuTableShortCell
+            let scell = cell as! MenuTableShortCell
             scell.item = item
             scell.descLabel.attributedText = result
         } else {
             assert(item.count > 0)
-            let lcell = cell as MenuTableLongCell
+            let lcell = cell as! MenuTableLongCell
             lcell.item = item
             lcell.descLabel.attributedText = result
             lcell.orderLabel.text = "Ordering \(item.count)"
@@ -171,12 +145,12 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
     func attributedTitleForItem(item: MenuItem) -> NSAttributedString {
         let name = NSAttributedString(string: item.name + " ", attributes: attribStringTemplate.attributesAtIndex(0, effectiveRange: nil))
         let desc = NSAttributedString(string: item.description! + " ", attributes: attribStringTemplate.attributesAtIndex(1, effectiveRange: nil))
-        let price = NSAttributedString(string: NSString(format: "%.2f", item.price), attributes: attribStringTemplate.attributesAtIndex(2, effectiveRange: nil))
+        let price = NSAttributedString(string: NSString(format: "%.2f", item.price) as String, attributes: attribStringTemplate.attributesAtIndex(2, effectiveRange: nil))
         let result = NSMutableAttributedString()
         result.appendAttributedString(name)
         result.appendAttributedString(desc)
         result.appendAttributedString(price)
-        let paragraphStyle = NSParagraphStyle.defaultParagraphStyle().mutableCopy() as NSMutableParagraphStyle
+        let paragraphStyle = NSParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
         paragraphStyle.lineBreakMode = .ByWordWrapping
         result.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: NSMakeRange(0, result.length))
         return result
@@ -186,9 +160,9 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate {
         var cell: UITableViewCell
         let item = menu.sectionByIndex(indexPath.section)!.items[indexPath.row]
         if item.count == 0 {
-            cell = tableView.dequeueReusableCellWithIdentifier("short", forIndexPath: indexPath) as UITableViewCell
+            cell = tableView.dequeueReusableCellWithIdentifier("short", forIndexPath: indexPath) as! UITableViewCell
         } else {
-            cell = tableView.dequeueReusableCellWithIdentifier("long", forIndexPath: indexPath) as UITableViewCell
+            cell = tableView.dequeueReusableCellWithIdentifier("long", forIndexPath: indexPath) as! UITableViewCell
         }
         configureCell(cell, forItem: item)
         return cell

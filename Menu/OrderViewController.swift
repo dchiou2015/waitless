@@ -48,7 +48,7 @@ class OrderViewController: UITableViewController {
     }
     
     func itemChanged(notification: NSNotification) {
-        let item = notification.object as MenuItem
+        let item = notification.object as! MenuItem
         var index = -1
         for (i, v) in enumerate(order) {
             if v === item {
@@ -81,7 +81,7 @@ class OrderViewController: UITableViewController {
         for item in order {
             total += Double(item.count) * item.price
         }
-        totalPriceLabel.text = NSString(format: "$%.2f total", total)
+        totalPriceLabel.text = NSString(format: "$%.2f total", total) as String
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -90,10 +90,10 @@ class OrderViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let item = order[indexPath.row]
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as OrderTableCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! OrderTableCell
         cell.item = item
         cell.nameLabel.text = item.name
-        cell.priceLabel.text = NSString(format: "%.2f×%d", item.price, item.count)
+        cell.priceLabel.text = NSString(format: "%.2f×%d", item.price, item.count) as String
         return cell
     }
     

@@ -12,7 +12,7 @@ let MenuItemChangedNotification = "MenuItemChangedNotification"
 
 class Menu {
     
-    let subMenus = [SubMenu]()
+    var subMenus = [SubMenu]()
     
     private var idMap = [Int: MenuItem]()
     
@@ -90,7 +90,7 @@ class SubMenu {
     weak var parent: Menu!
     let name: String
     let description: String?
-    let sections = [MenuSection]()
+    var sections = [MenuSection]()
 }
 
 class MenuSection {
@@ -108,7 +108,7 @@ class MenuSection {
     weak var parent: SubMenu!
     let name: String
     let description: String?
-    let items = [MenuItem]()
+    var items = [MenuItem]()
 }
 
 class MenuItem {
