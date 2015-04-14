@@ -32,7 +32,7 @@ class MenuTableLongCell: UITableViewCell {
         assert(item.count != 0)
         item.count -= 1
     }
-//    
+    
 //    override func hitTest(point: CGPoint, withEvent event: UIEvent?) -> UIView? {
 //        return fuzzyHitTestWithViews([plusButton, minusButton], point: point)
 //    }

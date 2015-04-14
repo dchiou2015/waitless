@@ -35,7 +35,7 @@ extension UIView {
     "Fuzzy hit test" returns the view from `views` which is _closest_ to `point`,
     or `nil` if no view is within `maxDistance` of `point`.
     */
-    func fuzzyHitTestWithViews(views: [UIView], point: CGPoint, maxDistance: CGFloat = 50) -> UIView? {
+    func fuzzyHitTestWithViews(views: [UIView], point: CGPoint, maxDistance: CGFloat = 10) -> UIView? {
         if !pointInside(point, withEvent: nil) {
             return nil
         }
