@@ -250,8 +250,9 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate, UIS
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let item = currentMenu.sectionByIndex(indexPath.section)!.items[indexPath.row]
         // how much larger is the cell than the text it contains?
-        let shortCellTextInsets = CGSizeMake(320 - 256, 58 - 38)
-        let longCellTextInsets = CGSizeMake(320 - 256, 96 - 38)
+        // praise the magic numbers
+        let shortCellTextInsets = CGSizeMake(83, 58 - 39)
+        let longCellTextInsets = CGSizeMake(83, 96 - 39)
         let insets = item.count > 0 ? longCellTextInsets : shortCellTextInsets
         
         let options = unsafeBitCast(NSStringDrawingOptions.UsesLineFragmentOrigin.rawValue |

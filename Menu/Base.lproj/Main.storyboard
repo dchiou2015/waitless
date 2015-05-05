@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="evl-nR-h01">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="evl-nR-h01">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -106,8 +106,8 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eUh-PN-y95" id="Ute-kc-bch">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IO4-Qt-CEQ">
-                                            <rect key="frame" x="15" y="8" width="256" height="39"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IO4-Qt-CEQ">
+                                            <rect key="frame" x="15" y="8" width="253" height="39"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Agedashi Tofu">
                                                     <attributes>
@@ -132,7 +132,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bf9-vF-f2a">
-                                            <rect key="frame" x="274" y="13" width="41" height="32"/>
+                                            <rect key="frame" x="271" y="13" width="41" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="41" id="aJY-9d-Sbo"/>
                                                 <constraint firstAttribute="height" constant="32" id="cgO-3M-Jyl"/>
@@ -148,9 +148,9 @@
                                     <constraints>
                                         <constraint firstItem="bf9-vF-f2a" firstAttribute="centerY" secondItem="IO4-Qt-CEQ" secondAttribute="centerY" constant="1.75" id="E1o-yB-akr"/>
                                         <constraint firstItem="IO4-Qt-CEQ" firstAttribute="leading" secondItem="Ute-kc-bch" secondAttribute="leadingMargin" constant="7" id="KZ2-4d-94j"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="bf9-vF-f2a" secondAttribute="trailing" constant="-3" id="T9a-pT-2dL"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="bf9-vF-f2a" secondAttribute="trailing" id="T9a-pT-2dL"/>
                                         <constraint firstItem="bf9-vF-f2a" firstAttribute="leading" secondItem="IO4-Qt-CEQ" secondAttribute="trailing" constant="3" id="fGK-mk-5tV"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="IO4-Qt-CEQ" secondAttribute="bottom" constant="3" id="fYo-8z-ZbO"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="IO4-Qt-CEQ" secondAttribute="bottom" constant="2" id="fYo-8z-ZbO"/>
                                         <constraint firstItem="IO4-Qt-CEQ" firstAttribute="top" secondItem="Ute-kc-bch" secondAttribute="topMargin" id="tXX-b4-Ooq"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -191,7 +191,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCj-3K-TfS">
-                                            <rect key="frame" x="233" y="55" width="41" height="24"/>
+                                            <rect key="frame" x="230" y="55" width="41" height="24"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="24" id="BvG-f8-3ic"/>
                                                 <constraint firstAttribute="width" constant="41" id="pmC-xD-47e"/>
@@ -204,7 +204,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4s-yr-yo6">
-                                            <rect key="frame" x="274" y="51" width="41" height="32"/>
+                                            <rect key="frame" x="271" y="51" width="41" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="32" id="au1-aP-oJg"/>
                                                 <constraint firstAttribute="width" constant="41" id="gkE-Qj-sJt"/>
@@ -217,7 +217,7 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ordering 1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csx-fr-VsN">
-                                            <rect key="frame" x="162" y="55" width="66" height="20"/>
+                                            <rect key="frame" x="159" y="55" width="66" height="20"/>
                                             <fontDescription key="fontDescription" name="GillSans-Italic" family="Gill Sans" pointSize="16"/>
                                             <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -233,7 +233,7 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="JCj-3K-TfS" secondAttribute="bottom" constant="8.5" id="h15-Ry-ZR3"/>
                                         <constraint firstItem="cQf-Ia-e4W" firstAttribute="top" secondItem="3xR-zr-PA2" secondAttribute="topMargin" id="h8i-r6-xJs"/>
                                         <constraint firstItem="cQf-Ia-e4W" firstAttribute="leading" secondItem="3xR-zr-PA2" secondAttribute="leadingMargin" constant="7" id="lor-l5-CFA"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="n4s-yr-yo6" secondAttribute="trailing" constant="-3" id="n2C-1c-25M"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="n4s-yr-yo6" secondAttribute="trailing" id="n2C-1c-25M"/>
                                         <constraint firstItem="JCj-3K-TfS" firstAttribute="leading" secondItem="csx-fr-VsN" secondAttribute="trailing" constant="5" id="soz-8W-mdC"/>
                                     </constraints>
                                 </tableViewCellContentView>
