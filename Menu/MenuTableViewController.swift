@@ -18,7 +18,6 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate, UIS
     @IBOutlet weak var templateLabel: UILabel!
     @IBOutlet weak var orderCountBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var finishBarButtonItem: UIBarButtonItem!
-    @IBOutlet weak var finishArrowBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var clearBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -159,12 +158,11 @@ class MenuTableViewController: UITableViewController, UIActionSheetDelegate, UIS
             total += item.count
         }
         orderCountBarButtonItem.title = "\(total) items in order".uppercaseString
-        orderCountBarButtonItem.tintColor = UIColor.blackColor()
+        orderCountBarButtonItem.tintColor = UIColor.whiteColor()
         orderCountBarButtonItem.enabled = true
-        clearBarButtonItem.tintColor = UIColor.blackColor()
+        clearBarButtonItem.tintColor = UIColor.whiteColor()
         clearBarButtonItem.enabled = true
         finishBarButtonItem.enabled = true
-        finishArrowBarButtonItem.enabled = true
         
         navigationController!.setToolbarHidden(total == 0, animated: true)
     }

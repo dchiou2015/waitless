@@ -20,6 +20,7 @@
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="c6Q-OY-q3G">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.81568627449999997" green="0.13725490200000001" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
                     </toolbar>
                     <connections>
                         <segue destination="Ctp-Fb-k8w" kind="relationship" relationship="rootViewController" id="Tjt-Tw-0UF"/>
@@ -237,6 +238,7 @@
                                         <constraint firstItem="JCj-3K-TfS" firstAttribute="leading" secondItem="csx-fr-VsN" secondAttribute="trailing" constant="5" id="soz-8W-mdC"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.90295138890000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="descLabel" destination="cQf-Ia-e4W" id="0mJ-4V-2jz"/>
                                     <outlet property="minusButton" destination="JCj-3K-TfS" id="sLv-eP-q6Y"/>
@@ -253,25 +255,21 @@
                     </tableView>
                     <toolbarItems>
                         <barButtonItem image="Close" id="S4n-9W-4JT">
-                            <color key="tintColor" white="0.25" alpha="0.91000000000000003" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" white="1" alpha="0.91000000000000003" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="clear:" destination="qeG-2w-XQb" id="p9e-gp-gh6"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="wO2-IX-hdL"/>
                         <barButtonItem title="5 ITEMS IN ORDER" id="OWA-Wx-9Dx">
-                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="e0J-O6-F7i"/>
-                        <barButtonItem title="FINISH" id="lkH-UA-mgD">
-                            <color key="tintColor" red="0.78039215689999997" green="0.1176470588" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem image="Finish" id="lkH-UA-mgD">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="finish:" destination="qeG-2w-XQb" id="KsP-hj-1ut"/>
                             </connections>
-                        </barButtonItem>
-                        <barButtonItem image="Chevron" id="hKB-3T-F37">
-                            <inset key="imageInsets" minX="-16" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            <color key="tintColor" red="0.78039215689999997" green="0.1176470588" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Menu" id="Bg9-zW-fjm">
@@ -283,10 +281,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                     <connections>
                         <outlet property="clearBarButtonItem" destination="S4n-9W-4JT" id="ydN-Ud-d9p"/>
-                        <outlet property="finishArrowBarButtonItem" destination="hKB-3T-F37" id="tJG-la-EKO"/>
                         <outlet property="finishBarButtonItem" destination="lkH-UA-mgD" id="pWR-Ay-KiM"/>
                         <outlet property="orderCountBarButtonItem" destination="OWA-Wx-9Dx" id="0Jm-Zq-er3"/>
                         <outlet property="searchBar" destination="XfL-Nm-Opa" id="ZJG-Zv-Kur"/>
@@ -511,8 +508,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Chevron" width="7" height="10"/>
         <image name="Close" width="21" height="20"/>
+        <image name="Finish" width="80" height="30"/>
         <image name="Map" width="483" height="483"/>
         <image name="Minus" width="24" height="24"/>
         <image name="Plus" width="24" height="24"/>
